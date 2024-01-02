@@ -1,4 +1,4 @@
-open class Controller: UIViewController {
+open class ViewController: UIViewController {
     private let theme = Theme.shared
     
     public init() {

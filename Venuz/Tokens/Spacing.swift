@@ -1,4 +1,4 @@
-@frozen public enum SpacingToken {
+@frozen public enum Spacing {
     case xs
     case sm
     case md

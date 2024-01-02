@@ -9,7 +9,7 @@
 import UIKit
 import Venuz
 
-final class ViewController: Controller {
+final class ViewController: ViewController {
     
     
 
@@ -21,10 +21,9 @@ final class ViewController: Controller {
         s.spacing = 10
         s.translatesAutoresizingMaskIntoConstraints = false
         
-        FontSizeToken.allCases.forEach { size in
-            let l = Label()
+        FontSize.allCases.forEach { size in
+            let l = Label(size)
             l.text = "Label (\(size))"
-            l.setFontSize(size)
             s.addArrangedSubview(l)
         }
         s.addArrangedSubview(UIView())

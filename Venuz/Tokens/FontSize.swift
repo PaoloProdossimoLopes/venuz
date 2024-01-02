@@ -1,4 +1,4 @@
-@frozen public enum FontSizeToken: CaseIterable {
+@frozen public enum FontSize: CaseIterable {
     case xs
     case sm
     case md
