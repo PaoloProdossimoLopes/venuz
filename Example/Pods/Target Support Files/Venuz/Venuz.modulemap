@@ -1,0 +1,6 @@
+framework module Venuz {
+  umbrella header "Venuz-umbrella.h"
+
+  export *
+  module * { export * }
+}

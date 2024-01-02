@@ -1,3 +1,5 @@
+![venuz banner](./Documentation/venuz-banner.png)
+
 # Venuz
 
 [![CI Status](https://img.shields.io/travis/PaoloProdossimoLopes/Venuz.svg?style=flat)](https://travis-ci.org/PaoloProdossimoLopes/Venuz)
