@@ -1,8 +1,9 @@
 {
   "name": "Venuz",
   "version": "0.1.0",
-  "summary": "A short description of Venuz.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Modular and composable desing system.",
+  "swift_versions": "5.0",
+  "description": "Venuz is a desing system component to create user interfaces with flexibility and style in every composition.",
   "homepage": "https://github.com/PaoloProdossimoLopes/Venuz",
   "license": {
     "type": "MIT",
@@ -16,7 +17,18 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
-  "source_files": "Venuz/Classes/**/*"
+  "source_files": "Venuz/**/*",
+  "subspecs": [
+    {
+      "name": "Tokens",
+      "source_files": "Venuz/Tokens/**/*.{swift}"
+    },
+    {
+      "name": "UIKit",
+      "source_files": "Venuz/UIKit/**/*.{swift}"
+    }
+  ],
+  "swift_version": "5.0"
 }
