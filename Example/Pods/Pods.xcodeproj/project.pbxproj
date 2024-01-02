@@ -33,6 +33,7 @@
 		A718A510D30E14998A315E3905765612 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		B16254392B44B080001EC92A /* ColorToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254382B44B080001EC92A /* ColorToken.swift */; };
 		B162543B2B44B586001EC92A /* SpacingToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162543A2B44B586001EC92A /* SpacingToken.swift */; };
+		B162543E2B44B84C001EC92A /* FontSizeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162543D2B44B84C001EC92A /* FontSizeToken.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		BDD9397DEE9EDD5AB0931E671107EFE0 /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A709F3DF70CA9B2BD82867C998C8E /* Venuz-dummy.m */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
@@ -114,6 +115,7 @@
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B16254382B44B080001EC92A /* ColorToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorToken.swift; sourceTree = "<group>"; };
 		B162543A2B44B586001EC92A /* SpacingToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingToken.swift; sourceTree = "<group>"; };
+		B162543D2B44B84C001EC92A /* FontSizeToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeToken.swift; sourceTree = "<group>"; };
 		B50637B05D27B1B4CC31CCD87E5A8EE1 /* Venuz-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Venuz-prefix.pch"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BB54AE9700B2BA58E5B2B938CE4AF3D6 /* Pods-Venuz_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Venuz_Example-dummy.m"; sourceTree = "<group>"; };
@@ -259,8 +261,16 @@
 			children = (
 				B16254382B44B080001EC92A /* ColorToken.swift */,
 				B162543A2B44B586001EC92A /* SpacingToken.swift */,
+				B162543D2B44B84C001EC92A /* FontSizeToken.swift */,
 			);
 			path = Tokens;
+			sourceTree = "<group>";
+		};
+		B162543C2B44B7E6001EC92A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
@@ -296,6 +306,7 @@
 		B946C4AEA25C9DE8EBB4ACFCCA2EE04B /* Venuz */ = {
 			isa = PBXGroup;
 			children = (
+				B162543C2B44B7E6001EC92A /* UIKit */,
 				B16254372B44B06A001EC92A /* Tokens */,
 				C9F2A9F1C73F51ED92F406E7AC454064 /* ReplaceMe.swift */,
 				898D3A72803EFB9024EB1C9CD74F94E1 /* Pod */,
@@ -583,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
+				B162543E2B44B84C001EC92A /* FontSizeToken.swift in Sources */,
 				B162543B2B44B586001EC92A /* SpacingToken.swift in Sources */,
 				B16254392B44B080001EC92A /* ColorToken.swift in Sources */,
 				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
