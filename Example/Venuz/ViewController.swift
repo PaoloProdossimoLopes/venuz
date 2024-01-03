@@ -6,39 +6,10 @@ final class MainViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let c = Card()
-        
-        FontSize.allCases.forEach { size in
-            c.attach(
-                Label(size)
-                    .setText("Label (\(size))")
-                    .setVariant(.standard)
-            )
-        }
-        
-        FontSize.allCases.forEach { size in
-            c.attach(
-                Label(size)
-                    .setText("Label (\(size))")
-                    .setVariant(.mutted)
-            )
-        }
-        
-        c.attach(
-            Card(
-                Button.Filled()
-                    .setText("FillButton")
-                    .setEnableState(),
-                Button.Filled()
-                    .setText("FillButton")
-                    .setDisableState(),
-                Button.Outline()
-                    .setText("OutlineButton")
-                    .setEnableState(),
-                Button.Outline()
-                    .setText("OutlineButton")
-                    .setDisableState()
-            )
+        let c = Card(
+            Alert()
+                .setTitle("Head's up!")
+                .setDescription("You can add your description")
         )
         
         c.attach(UIView())

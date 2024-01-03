@@ -1,13 +1,7 @@
 open class Card: UIView {
-    private let theme = Theme.shared
+    let theme = Theme.shared
     
-    private lazy var container: UIStackView = {
-        let s = UIStackView()
-        s.axis = .vertical
-        s.spacing = Spacing.md.value
-        s.enableInteraction()
-        return s
-    }()
+    lazy var container = Stack.Vertical(spacing: .md)
     
     public init(_ items: UIView...) {
         super.init(frame: .zero)

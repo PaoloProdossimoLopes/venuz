@@ -27,6 +27,11 @@
 		B13196812B4514E300B5B8D2 /* Contraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196802B4514E300B5B8D2 /* Contraintable.swift */; };
 		B13196852B45245200B5B8D2 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196842B45245200B5B8D2 /* Separator.swift */; };
 		B13196872B45254300B5B8D2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196862B45254300B5B8D2 /* Card.swift */; };
+		B13196892B452AE600B5B8D2 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196882B452AE600B5B8D2 /* Icon.swift */; };
+		B131968B2B452C6500B5B8D2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131968A2B452C6500B5B8D2 /* Alert.swift */; };
+		B131968D2B4534CE00B5B8D2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131968C2B4534CE00B5B8D2 /* Image.swift */; };
+		B131968F2B45351400B5B8D2 /* Icon+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131968E2B45351400B5B8D2 /* Icon+Extensions.swift */; };
+		B13196912B45352400B5B8D2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196902B45352400B5B8D2 /* Stack.swift */; };
 		B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254492B44D6E1001EC92A /* FontSize+Extension.swift */; };
 		B162544C2B44D708001EC92A /* RGBA+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544B2B44D708001EC92A /* RGBA+Extensions.swift */; };
 		B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544D2B44D72B001EC92A /* UIView+Extensions.swift */; };
@@ -77,6 +82,11 @@
 		B13196802B4514E300B5B8D2 /* Contraintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contraintable.swift; sourceTree = "<group>"; };
 		B13196842B45245200B5B8D2 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		B13196862B45254300B5B8D2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B13196882B452AE600B5B8D2 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		B131968A2B452C6500B5B8D2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		B131968C2B4534CE00B5B8D2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B131968E2B45351400B5B8D2 /* Icon+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Icon+Extensions.swift"; sourceTree = "<group>"; };
+		B13196902B45352400B5B8D2 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		B16254492B44D6E1001EC92A /* FontSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontSize+Extension.swift"; sourceTree = "<group>"; };
 		B162544B2B44D708001EC92A /* RGBA+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Extensions.swift"; sourceTree = "<group>"; };
 		B162544D2B44D72B001EC92A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -156,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				B162544F2B44D748001EC92A /* Utils */,
+				B13196882B452AE600B5B8D2 /* Icon.swift */,
+				B131968A2B452C6500B5B8D2 /* Alert.swift */,
+				B131968C2B4534CE00B5B8D2 /* Image.swift */,
 				FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */,
 				33687D24A26E84B2159948E5FDFC54AF /* Text.swift */,
 				B16254502B44D8A9001EC92A /* Button.swift */,
@@ -163,6 +176,7 @@
 				B13196802B4514E300B5B8D2 /* Contraintable.swift */,
 				B13196842B45245200B5B8D2 /* Separator.swift */,
 				B13196862B45254300B5B8D2 /* Card.swift */,
+				B13196902B45352400B5B8D2 /* Stack.swift */,
 			);
 			name = UIKit;
 			path = Venuz/UIKit;
@@ -238,6 +252,7 @@
 				B162544D2B44D72B001EC92A /* UIView+Extensions.swift */,
 				B131967A2B44F93500B5B8D2 /* Radius+Extensions.swift */,
 				B131967C2B44F94B00B5B8D2 /* Spacing+Extensions.swift */,
+				B131968E2B45351400B5B8D2 /* Icon+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -371,15 +386,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13196812B4514E300B5B8D2 /* Contraintable.swift in Sources */,
+				B131968D2B4534CE00B5B8D2 /* Image.swift in Sources */,
 				3D41F06C13EAD311EBBF9DC062B5682F /* AphroditeToken.swift in Sources */,
 				9840772525556D5BA3CA15A314D0332A /* ColorToken.swift in Sources */,
+				B131968B2B452C6500B5B8D2 /* Alert.swift in Sources */,
 				B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */,
 				B13196772B44E7DD00B5B8D2 /* Radius.swift in Sources */,
 				B16254512B44D8A9001EC92A /* Button.swift in Sources */,
 				38C51004575AC8D2EE67325F7D100C30 /* ViewController.swift in Sources */,
 				A0A67BE0B9B7751FD68848D46DCE8596 /* FontSize.swift in Sources */,
+				B131968F2B45351400B5B8D2 /* Icon+Extensions.swift in Sources */,
 				5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */,
 				B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */,
+				B13196892B452AE600B5B8D2 /* Icon.swift in Sources */,
+				B13196912B45352400B5B8D2 /* Stack.swift in Sources */,
 				B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */,
 				B131967F2B4514CE00B5B8D2 /* Edge.swift in Sources */,
 				B9854D19BAFE1C061145BDE971383DA4 /* Text.swift in Sources */,
