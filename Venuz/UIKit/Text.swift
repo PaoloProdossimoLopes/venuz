@@ -23,6 +23,7 @@ open class Label: UILabel {
         setText(String())
         setVariant()
         enableViewCode()
+        setMaxLines(0)
     }
     
     @available(*, unavailable)
@@ -59,6 +60,13 @@ open class Label: UILabel {
         case .standard:
             textColor = theme.token.color.foreground.uiColor
         }
+        
+        return self
+    }
+    
+    @discardableResult
+    public func setMaxLines(_ numberOfLines: Int) -> Self {
+        self.numberOfLines = numberOfLines
         
         return self
     }

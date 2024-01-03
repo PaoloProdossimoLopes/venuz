@@ -1,23 +1,25 @@
 open class Button: UIControl {
     
-    public static func Filled() -> Button {
+    public static func Filled(title: String = String()) -> Button {
         let color = Theme.shared.token.color
-        return Button(
+        let btn = Button(
             background: color.accent,
             backgroundMutted: color.muttedAccent,
             highlightBackground: color.highlightAccent,
             boarder: nil
-        )
+        ).setText(title)
+        return btn
     }
     
-    public static func Outline() -> Button {
+    public static func Outline(title: String = String()) -> Button {
         let color = Theme.shared.token.color
-        return Button(
+        let btn = Button(
             background: color.transparent,
             backgroundMutted: color.transparent,
             highlightBackground: color.highlightBackground,
             boarder: color.highlightBackground
-        )
+        ).setText(title)
+        return btn
     }
 
     private let background: RGBA
