@@ -2,16 +2,11 @@
 
 # Venuz
 
-[![CI Status](https://img.shields.io/travis/PaoloProdossimoLopes/Venuz.svg?style=flat)](https://travis-ci.org/PaoloProdossimoLopes/Venuz)
-[![Version](https://img.shields.io/cocoapods/v/Venuz.svg?style=flat)](https://cocoapods.org/pods/Venuz)
-[![License](https://img.shields.io/cocoapods/l/Venuz.svg?style=flat)](https://cocoapods.org/pods/Venuz)
-[![Platform](https://img.shields.io/cocoapods/p/Venuz.svg?style=flat)](https://cocoapods.org/pods/Venuz)
+Desing system component to create user interfaces with flexibility and style in every composition.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -19,12 +14,16 @@ Venuz is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Venuz'
+pod 'Venuz' # Using this to install all features
+
+#or
+
+pod 'Vezuz/UIKit' # Using the /UIKit to import only the features to use UIKit
+
+#or
+
+pod 'Vezuz/SwiftUI' # Using the /SwiftUI to import only the features to use SwiftUI
 ```
-
-## Author
-
-PaoloProdossimoLopes, paolo.prodossimo.lopes@gmail.com
 
 ## License
 
