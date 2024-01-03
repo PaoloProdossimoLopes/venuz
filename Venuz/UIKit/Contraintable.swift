@@ -5,10 +5,7 @@ final class Contraintable {
     
     init(_ item: UIView) {
         self.item = item
-        
-        if item.translatesAutoresizingMaskIntoConstraints {
-            item.enableViewCode()
-        }
+        item.enableViewCode()
     }
     
     @discardableResult
@@ -25,12 +22,14 @@ final class Contraintable {
     
     @discardableResult
     func anchorEqualTrailing(on view: UIView, padding: Spacing) -> Self {
+        view.enableViewCode()
         active(view.trailingAnchor.constraint(equalTo: item.trailingAnchor, constant: padding.value))
         return self
     }
     
     @discardableResult
     func anchorEqualBottom(on view: UIView, padding: Spacing) -> Self {
+        view.enableViewCode()
         active(view.bottomAnchor.constraint(equalTo: item.bottomAnchor, constant: padding.value))
         return self
     }

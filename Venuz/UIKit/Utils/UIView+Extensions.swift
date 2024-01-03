@@ -1,8 +1,18 @@
 import UIKit
 
 extension UIView {
+    func enableInteraction() {
+        isUserInteractionEnabled = true
+    }
+    
+    func disableInteraction() {
+        isUserInteractionEnabled = false
+    }
+    
     func enableViewCode() {
-        translatesAutoresizingMaskIntoConstraints = false
+        if translatesAutoresizingMaskIntoConstraints {
+            translatesAutoresizingMaskIntoConstraints = false
+        }
     }
     
     var constraintable: Contraintable {

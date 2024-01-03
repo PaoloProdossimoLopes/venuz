@@ -6,13 +6,10 @@ final class MainViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let s = UIStackView ()
-        s.axis = .vertical
-        s.spacing = 10
-        s.translatesAutoresizingMaskIntoConstraints = false
+        let c = Card()
         
         FontSize.allCases.forEach { size in
-            s.addArrangedSubview(
+            c.attach(
                 Label(size)
                     .setText("Label (\(size))")
                     .setVariant(.standard)
@@ -20,45 +17,38 @@ final class MainViewController: ViewController {
         }
         
         FontSize.allCases.forEach { size in
-            s.addArrangedSubview(
+            c.attach(
                 Label(size)
                     .setText("Label (\(size))")
                     .setVariant(.mutted)
             )
         }
         
-        s.addArrangedSubview(
-            Button.Filled()
-                .setText("FillButton")
-                .setEnableState()
+        c.attach(
+            Card(
+                Button.Filled()
+                    .setText("FillButton")
+                    .setEnableState(),
+                Button.Filled()
+                    .setText("FillButton")
+                    .setDisableState(),
+                Button.Outline()
+                    .setText("OutlineButton")
+                    .setEnableState(),
+                Button.Outline()
+                    .setText("OutlineButton")
+                    .setDisableState()
+            )
         )
         
-        s.addArrangedSubview(
-            Button.Filled()
-                .setText("FillButton")
-                .setDisableState()
-        )
+        c.attach(UIView())
         
-        s.addArrangedSubview(
-            Button.Outline()
-                .setText("OutlineButton")
-                .setEnableState()
-        )
-        
-        s.addArrangedSubview(
-            Button.Outline()
-                .setText("OutlineButton")
-                .setDisableState()
-        )
-        
-        s.addArrangedSubview(UIView())
-        
-        view.addSubview(s)
+        view.addSubview(c)
         NSLayoutConstraint.activate([
-            s.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            s.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            s.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            s.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+            c.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            c.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            c.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            c.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
         ])
     }
 

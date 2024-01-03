@@ -21,15 +21,16 @@
 		A0A67BE0B9B7751FD68848D46DCE8596 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CF6CA6C001131A7D8744B4BA0F001 /* FontSize.swift */; };
 		A12DE45B2DB4E241F8AB10622FBDED29 /* Pods-Venuz_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1397239C0900E6C58EA3A3A051939EA1 /* Pods-Venuz_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B13196772B44E7DD00B5B8D2 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196762B44E7DD00B5B8D2 /* Radius.swift */; };
-		B13196792B44F92400B5B8D2 /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196782B44F92400B5B8D2 /* UIControl+Extensions.swift */; };
 		B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131967A2B44F93500B5B8D2 /* Radius+Extensions.swift */; };
 		B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131967C2B44F94B00B5B8D2 /* Spacing+Extensions.swift */; };
 		B131967F2B4514CE00B5B8D2 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131967E2B4514CE00B5B8D2 /* Edge.swift */; };
 		B13196812B4514E300B5B8D2 /* Contraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196802B4514E300B5B8D2 /* Contraintable.swift */; };
+		B13196852B45245200B5B8D2 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196842B45245200B5B8D2 /* Separator.swift */; };
+		B13196872B45254300B5B8D2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196862B45254300B5B8D2 /* Card.swift */; };
 		B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254492B44D6E1001EC92A /* FontSize+Extension.swift */; };
 		B162544C2B44D708001EC92A /* RGBA+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544B2B44D708001EC92A /* RGBA+Extensions.swift */; };
 		B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544D2B44D72B001EC92A /* UIView+Extensions.swift */; };
-		B16254512B44D8A9001EC92A /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254502B44D8A9001EC92A /* FillButton.swift */; };
+		B16254512B44D8A9001EC92A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254502B44D8A9001EC92A /* Button.swift */; };
 		B9854D19BAFE1C061145BDE971383DA4 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33687D24A26E84B2159948E5FDFC54AF /* Text.swift */; };
 		CA3CE8F384A32B05F0C410BEF9280170 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C6640B12E5BF437A1E1E777C9CFA2 /* Token.swift */; };
 /* End PBXBuildFile section */
@@ -70,15 +71,16 @@
 		A770F9FAEEB0B4CDD9B3A9860334CF48 /* Pods-Venuz_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Venuz_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Venuz-dummy.m"; sourceTree = "<group>"; };
 		B13196762B44E7DD00B5B8D2 /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
-		B13196782B44F92400B5B8D2 /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
 		B131967A2B44F93500B5B8D2 /* Radius+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Radius+Extensions.swift"; sourceTree = "<group>"; };
 		B131967C2B44F94B00B5B8D2 /* Spacing+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spacing+Extensions.swift"; sourceTree = "<group>"; };
 		B131967E2B4514CE00B5B8D2 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		B13196802B4514E300B5B8D2 /* Contraintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contraintable.swift; sourceTree = "<group>"; };
+		B13196842B45245200B5B8D2 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		B13196862B45254300B5B8D2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B16254492B44D6E1001EC92A /* FontSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontSize+Extension.swift"; sourceTree = "<group>"; };
 		B162544B2B44D708001EC92A /* RGBA+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Extensions.swift"; sourceTree = "<group>"; };
 		B162544D2B44D72B001EC92A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		B16254502B44D8A9001EC92A /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
+		B16254502B44D8A9001EC92A /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		B636A1D8B81CF5EBDB5735356E673100 /* ColorToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorToken.swift; sourceTree = "<group>"; };
 		CFA7DA50403DEA7199A566A32459EE67 /* Venuz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Venuz.release.xcconfig; sourceTree = "<group>"; };
 		E92AFF2AA7F54C32AE35FED807B7DB69 /* Venuz-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Venuz-prefix.pch"; sourceTree = "<group>"; };
@@ -156,9 +158,11 @@
 				B162544F2B44D748001EC92A /* Utils */,
 				FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */,
 				33687D24A26E84B2159948E5FDFC54AF /* Text.swift */,
-				B16254502B44D8A9001EC92A /* FillButton.swift */,
+				B16254502B44D8A9001EC92A /* Button.swift */,
 				B131967E2B4514CE00B5B8D2 /* Edge.swift */,
 				B13196802B4514E300B5B8D2 /* Contraintable.swift */,
+				B13196842B45245200B5B8D2 /* Separator.swift */,
+				B13196862B45254300B5B8D2 /* Card.swift */,
 			);
 			name = UIKit;
 			path = Venuz/UIKit;
@@ -232,7 +236,6 @@
 				B16254492B44D6E1001EC92A /* FontSize+Extension.swift */,
 				B162544B2B44D708001EC92A /* RGBA+Extensions.swift */,
 				B162544D2B44D72B001EC92A /* UIView+Extensions.swift */,
-				B13196782B44F92400B5B8D2 /* UIControl+Extensions.swift */,
 				B131967A2B44F93500B5B8D2 /* Radius+Extensions.swift */,
 				B131967C2B44F94B00B5B8D2 /* Spacing+Extensions.swift */,
 			);
@@ -372,7 +375,7 @@
 				9840772525556D5BA3CA15A314D0332A /* ColorToken.swift in Sources */,
 				B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */,
 				B13196772B44E7DD00B5B8D2 /* Radius.swift in Sources */,
-				B16254512B44D8A9001EC92A /* FillButton.swift in Sources */,
+				B16254512B44D8A9001EC92A /* Button.swift in Sources */,
 				38C51004575AC8D2EE67325F7D100C30 /* ViewController.swift in Sources */,
 				A0A67BE0B9B7751FD68848D46DCE8596 /* FontSize.swift in Sources */,
 				5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */,
@@ -383,10 +386,11 @@
 				66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */,
 				B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */,
 				CA3CE8F384A32B05F0C410BEF9280170 /* Token.swift in Sources */,
+				B13196872B45254300B5B8D2 /* Card.swift in Sources */,
 				0DCBF00BABADE504F98857EC68296D31 /* Venuz.swift in Sources */,
+				B13196852B45245200B5B8D2 /* Separator.swift in Sources */,
 				626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */,
 				B162544C2B44D708001EC92A /* RGBA+Extensions.swift in Sources */,
-				B13196792B44F92400B5B8D2 /* UIControl+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
