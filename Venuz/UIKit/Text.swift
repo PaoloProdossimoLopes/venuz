@@ -12,10 +12,10 @@ open class Label: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        textColor = theme.token.color.foreground.uiColor
-        backgroundColor = theme.token.color.background.uiColor
         isAccessibilityElement = true
+        isUserInteractionEnabled = false
 
+        unmutted()
         enableViewCode()
     }
     
@@ -26,5 +26,13 @@ open class Label: UILabel {
         font = size.uiFont
         accessibilityTraits = size.uiAccessibilityTrait
         adjustsFontForContentSizeCategory = true
+    }
+    
+    public func mutted() {
+        textColor = theme.token.color.muttedForeground.uiColor
+    }
+    
+    public func unmutted() {
+        textColor = theme.token.color.foreground.uiColor
     }
 }

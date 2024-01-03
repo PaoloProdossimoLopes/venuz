@@ -9,10 +9,8 @@
 import UIKit
 import Venuz
 
-final class ViewController: ViewController {
+final class MainViewController: ViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +24,14 @@ final class ViewController: ViewController {
             l.text = "Label (\(size))"
             s.addArrangedSubview(l)
         }
+        
+        let btn = FillButton(frame: .zero)
+        btn.text = "FillButton"
+        btn.enable()
+        s.addArrangedSubview(btn)
+        
+        
+        
         s.addArrangedSubview(UIView())
         
         view.addSubview(s)

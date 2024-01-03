@@ -1,10 +1,19 @@
 protocol ColorToken {
     var background: RGBA { get }
+    var muttedBackground: RGBA { get }
+    var highlightBackground: RGBA { get }
+    
     var foreground: RGBA { get }
+    var muttedForeground: RGBA { get }
+    var highlightForeground: RGBA { get }
+    
+    var accent: RGBA { get }
+    var muttedAccent: RGBA { get }
+    var highlightAccent: RGBA { get }
 }
 
 struct RGBA {
-    let r: UInt8
-    let g: UInt8
-    let b: UInt8
+    let r: CGFloat
+    let g: CGFloat
+    let b: CGFloat
 }
