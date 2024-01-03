@@ -8,7 +8,7 @@ extension RGBA {
             red: CGFloat(r) / maxRGBValue,
             green: CGFloat(g) / maxRGBValue,
             blue: CGFloat(b) / maxRGBValue,
-            alpha: 1
+            alpha: a
         )
     }
 }

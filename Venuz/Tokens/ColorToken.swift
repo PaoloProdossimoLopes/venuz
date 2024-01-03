@@ -10,10 +10,13 @@ protocol ColorToken {
     var accent: RGBA { get }
     var muttedAccent: RGBA { get }
     var highlightAccent: RGBA { get }
+    
+    var transparent: RGBA { get }
 }
 
 struct RGBA {
     let r: CGFloat
     let g: CGFloat
     let b: CGFloat
+    var a: CGFloat = 1
 }

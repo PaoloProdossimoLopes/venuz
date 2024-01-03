@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Venuz
-//
-//  Created by PaoloProdossimoLopes on 01/02/2024.
-//  Copyright (c) 2024 PaoloProdossimoLopes. All rights reserved.
-//
-
 import UIKit
 import Venuz
 
@@ -20,17 +12,44 @@ final class MainViewController: ViewController {
         s.translatesAutoresizingMaskIntoConstraints = false
         
         FontSize.allCases.forEach { size in
-            let l = Label(size)
-            l.text = "Label (\(size))"
-            s.addArrangedSubview(l)
+            s.addArrangedSubview(
+                Label(size)
+                    .setText("Label (\(size))")
+                    .setVariant(.standard)
+            )
         }
         
-        let btn = FillButton(frame: .zero)
-        btn.text = "FillButton"
-        btn.enable()
-        s.addArrangedSubview(btn)
+        FontSize.allCases.forEach { size in
+            s.addArrangedSubview(
+                Label(size)
+                    .setText("Label (\(size))")
+                    .setVariant(.mutted)
+            )
+        }
         
+        s.addArrangedSubview(
+            Button.Filled()
+                .setText("FillButton")
+                .setEnableState()
+        )
         
+        s.addArrangedSubview(
+            Button.Filled()
+                .setText("FillButton")
+                .setDisableState()
+        )
+        
+        s.addArrangedSubview(
+            Button.Outline()
+                .setText("OutlineButton")
+                .setEnableState()
+        )
+        
+        s.addArrangedSubview(
+            Button.Outline()
+                .setText("OutlineButton")
+                .setDisableState()
+        )
         
         s.addArrangedSubview(UIView())
         

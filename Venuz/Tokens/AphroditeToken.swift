@@ -2,6 +2,8 @@ final class AphroditeToken: Token {
     let color: ColorToken = AphroditeToken.Color()
     
     struct Color: ColorToken {
+        let transparent = RGBA(r: 0, g: 0, b: 0, a: 0)
+        
         let background = RGBA(r: 39, g: 39, b: 42)
         let muttedBackground = RGBA(r: 39, g: 39, b: 42)
         let highlightBackground = RGBA(r: 63, g: 63, b: 70)

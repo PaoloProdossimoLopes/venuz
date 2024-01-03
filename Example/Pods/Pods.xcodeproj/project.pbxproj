@@ -24,6 +24,8 @@
 		B13196792B44F92400B5B8D2 /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196782B44F92400B5B8D2 /* UIControl+Extensions.swift */; };
 		B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131967A2B44F93500B5B8D2 /* Radius+Extensions.swift */; };
 		B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131967C2B44F94B00B5B8D2 /* Spacing+Extensions.swift */; };
+		B131967F2B4514CE00B5B8D2 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B131967E2B4514CE00B5B8D2 /* Edge.swift */; };
+		B13196812B4514E300B5B8D2 /* Contraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13196802B4514E300B5B8D2 /* Contraintable.swift */; };
 		B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254492B44D6E1001EC92A /* FontSize+Extension.swift */; };
 		B162544C2B44D708001EC92A /* RGBA+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544B2B44D708001EC92A /* RGBA+Extensions.swift */; };
 		B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544D2B44D72B001EC92A /* UIView+Extensions.swift */; };
@@ -71,6 +73,8 @@
 		B13196782B44F92400B5B8D2 /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
 		B131967A2B44F93500B5B8D2 /* Radius+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Radius+Extensions.swift"; sourceTree = "<group>"; };
 		B131967C2B44F94B00B5B8D2 /* Spacing+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spacing+Extensions.swift"; sourceTree = "<group>"; };
+		B131967E2B4514CE00B5B8D2 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		B13196802B4514E300B5B8D2 /* Contraintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contraintable.swift; sourceTree = "<group>"; };
 		B16254492B44D6E1001EC92A /* FontSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontSize+Extension.swift"; sourceTree = "<group>"; };
 		B162544B2B44D708001EC92A /* RGBA+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBA+Extensions.swift"; sourceTree = "<group>"; };
 		B162544D2B44D72B001EC92A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */,
 				33687D24A26E84B2159948E5FDFC54AF /* Text.swift */,
 				B16254502B44D8A9001EC92A /* FillButton.swift */,
+				B131967E2B4514CE00B5B8D2 /* Edge.swift */,
+				B13196802B4514E300B5B8D2 /* Contraintable.swift */,
 			);
 			name = UIKit;
 			path = Venuz/UIKit;
@@ -361,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13196812B4514E300B5B8D2 /* Contraintable.swift in Sources */,
 				3D41F06C13EAD311EBBF9DC062B5682F /* AphroditeToken.swift in Sources */,
 				9840772525556D5BA3CA15A314D0332A /* ColorToken.swift in Sources */,
 				B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */,
@@ -371,6 +378,7 @@
 				5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */,
 				B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */,
 				B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */,
+				B131967F2B4514CE00B5B8D2 /* Edge.swift in Sources */,
 				B9854D19BAFE1C061145BDE971383DA4 /* Text.swift in Sources */,
 				66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */,
 				B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */,
