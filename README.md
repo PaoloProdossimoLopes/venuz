@@ -18,11 +18,11 @@ pod 'Venuz' # Using this to install all features
 
 #or
 
-pod 'Vezuz/UIKit' # Using the /UIKit to import only the features to use UIKit
+pod 'Venuz/UIKit' # Using the /UIKit to import only the features to use UIKit
 
 #or
 
-pod 'Vezuz/SwiftUI' # Using the /SwiftUI to import only the features to use SwiftUI
+pod 'Venuz/SwiftUI' # Using the /SwiftUI to import only the features to use SwiftUI
 ```
 
 ## License
