@@ -2,14 +2,23 @@ open class AlertDialogViewController: ViewController {
     
     private let theme = Theme.shared
     
+    private lazy var closeImage = Image(.x)
+        .addTapAction(target: self, action: #selector(closeButtonActionHandler))
+        .setScaleAspecToFit()
+    
     private lazy var titleLabel = Label(.xl)
-    
     private lazy var descriptionLabel = Label(.md)
-        
     private lazy var buttonsContainer = Stack.Horizontal(spacing: .md, UIView())
-    
+
     private lazy var cardContainer = Card()
-        .attach(Stack.Vertical(spacing: .sm, titleLabel, descriptionLabel))
+        .attach(
+            Stack.Vertical(
+                spacing: .sm,
+                Stack.Horizontal(closeImage, UIView()),
+                titleLabel,
+                descriptionLabel
+            )
+        )
         .attach(buttonsContainer)
     
     public init(title: String, description: String) {
@@ -75,5 +84,9 @@ open class AlertDialogViewController: ViewController {
     public func addButton(_ btn: Button) -> Self {
         buttonsContainer.attach(btn)
         return self
+    }
+    
+    @objc private func closeButtonActionHandler() {
+        dismiss(animated: true)
     }
 }

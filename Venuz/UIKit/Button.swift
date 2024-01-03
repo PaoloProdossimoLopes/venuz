@@ -106,3 +106,14 @@ open class Button: UIControl {
         boarder != nil ? 1 : 0
     }
 }
+
+extension UIView {
+    @discardableResult
+    func addTapAction(target: Any?, action: Selector?) -> Self {
+        let tapGesture = UITapGestureRecognizer(target: target, action: action)
+        addGestureRecognizer(tapGesture)
+        isUserInteractionEnabled = true
+        
+        return self
+    }
+}
