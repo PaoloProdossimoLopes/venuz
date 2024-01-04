@@ -1,4 +1,4 @@
-open class Card: UIView {
+open class Card: UIControl {
     let theme = Theme.shared
     
     lazy var container = Stack.Vertical(spacing: .md)
@@ -6,18 +6,39 @@ open class Card: UIView {
     public init(_ items: UIView...) {
         super.init(frame: .zero)
         
+        setBoader()
+        setRadius(.md)
         setAxis(.vertical)
-        backgroundColor = theme.token.color.background.uiColor
-        layer.borderColor = theme.token.color.highlightBackground.uiColor.cgColor
-        layer.borderWidth = 1
-        layer.cornerRadius = Radius.md.value
         
         items.forEach {
             container.addArrangedSubview($0)
         }
         
         addSubview(container)
-        container.constraintable.fill(on: self, edge: .axis(v: .md, h: .sm))
+        backgroundColor = theme.token.color.background.uiColor
+        
+        container
+            .constraintable
+            .fill(on: self, edge: .axis(v: .lg, h: .md))
+    }
+    
+    @available(*, unavailable)
+    required public init?(coder: NSCoder) { nil }
+    
+    @discardableResult
+    public func setBoader() -> Self {
+        layer.borderColor = theme.token.color.highlightBackground.uiColor.cgColor
+        layer.borderWidth = 1
+        
+        return self
+    }
+    
+    @discardableResult
+    public func removeBoader() -> Self {
+        layer.borderColor = nil
+        layer.borderWidth = 0
+        
+        return self
     }
     
     @discardableResult
@@ -34,6 +55,10 @@ open class Card: UIView {
         return self
     }
     
-    @available(*, unavailable)
-    required public init?(coder: NSCoder) { nil }
+    @discardableResult
+    public func setRadius(_ radius: Radius) -> Self {
+        layer.cornerRadius = radius.value
+        
+        return self
+    }
 }

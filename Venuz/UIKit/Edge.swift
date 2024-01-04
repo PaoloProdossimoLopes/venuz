@@ -16,5 +16,9 @@ struct Edge {
         Edge(leading: horizontal, top: vertical, trailing: horizontal, bottom: vertical)
     }
     
-    static let none = Edge(leading: .none, top: .none, trailing: .none, bottom: .none)
+    static func equal(_ value: Spacing) -> Edge {
+        Edge(leading: value, top: value, trailing: value, bottom: value)
+    }
+    
+    static let none = equal(.none)
 }

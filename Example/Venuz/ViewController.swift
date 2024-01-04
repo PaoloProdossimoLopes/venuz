@@ -3,27 +3,20 @@ import Venuz
 
 final class MainViewController: ViewController {
     
-    private let loader = Loader()
-    private lazy var c = Card(
-        loader
-    )
+    private let avatar = Avatar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        c.attach(UIView())
-        view.addSubview(c)
-        c.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(avatar)
+        avatar.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            c.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            c.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            c.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            c.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+            avatar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            avatar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
         ])
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.loader.stopLoading()
+            self.avatar.setState(.unavailable("PP"))
             let alertDialog = AlertDialogViewController(
                 title: "Are you sure?",
                 description: "This action cannot be undone. This will permanetily delete your account and remove your data"

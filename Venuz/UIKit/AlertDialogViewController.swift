@@ -29,6 +29,7 @@ open class AlertDialogViewController: ViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = theme.token.color.transparent.uiColor
         view.addSubview(cardContainer)
         
         cardContainer.constraintable
@@ -49,7 +50,9 @@ open class AlertDialogViewController: ViewController {
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = theme.token.color.background.uiColor.withAlphaComponent(0.6)
+        UIView.animate(withDuration: 0.3) {
+            self.view.backgroundColor = self.theme.token.color.background.uiColor.withAlphaComponent(0.6)
+        }
     }
     
     open override func viewDidAppear(_ animated: Bool) {
