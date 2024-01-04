@@ -1,6 +1,6 @@
 open class Alert: Card {
     
-    private lazy var image = Image()
+    private lazy var image = Image(.bubbleRight)
         .setIcon(.bubbleRightFill)
         .setScaleAspecToFit()
     

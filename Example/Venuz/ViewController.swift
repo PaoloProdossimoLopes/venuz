@@ -3,10 +3,9 @@ import Venuz
 
 final class MainViewController: ViewController {
     
+    private let loader = Loader()
     private lazy var c = Card(
-        Alert()
-            .setTitle("Head's up!")
-            .setDescription("You can add your description")
+        loader
     )
     
     override func viewDidLoad() {
@@ -24,6 +23,7 @@ final class MainViewController: ViewController {
         ])
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.loader.stopLoading()
             let alertDialog = AlertDialogViewController(
                 title: "Are you sure?",
                 description: "This action cannot be undone. This will permanetily delete your account and remove your data"
