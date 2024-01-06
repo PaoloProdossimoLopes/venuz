@@ -1,4 +1,10 @@
+protocol StepperDelegate: AnyObject {
+    func stepperChange(_ stepper: Stepper, percentage: Float)
+}
+
 open class Stepper: View {
+    weak var delegate: StepperDelegate?
+    
     private(set) var currentStep: Float
     private let totalSteps: Float
     
@@ -52,6 +58,8 @@ open class Stepper: View {
             currentStep -= 1
             updateProgress()
         }
+        
+        delegate?.stepperChange(self, percentage: percentage)
     }
     
     @objc private func nextActionButtonHandler() {
@@ -59,6 +67,8 @@ open class Stepper: View {
             currentStep += 1
             updateProgress()
         }
+        
+        delegate?.stepperChange(self, percentage: percentage)
     }
     
     private func updateProgress() {
