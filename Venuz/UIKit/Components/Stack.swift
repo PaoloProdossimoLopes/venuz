@@ -32,8 +32,14 @@ open class Stack: UIStackView {
     }
     
     @discardableResult
-    public func distribution(_ dist: UIStackView.Distribution) -> Self {
+    public func setDistribution(_ dist: UIStackView.Distribution) -> Self {
         distribution = dist
+        return self
+    }
+    
+    @discardableResult
+    public func setSpacing(_ spacing: Spacing) -> Self {
+        self.spacing = spacing.value
         return self
     }
 }

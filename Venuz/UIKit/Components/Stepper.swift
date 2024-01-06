@@ -36,9 +36,9 @@ open class Stepper: View {
         addSubview(nextImage)
         
         backImage.constraintable
-            .anchorEqualTop(on: self)
+            .anchorEqualTop(atTop: self)
             .anchorEqualLeading(atLeading: self)
-            .anchorEqualBottom(on: self)
+            .anchorEqualBottom(atBottom: self)
         
         progress.constraintable
             .centerY(on: self)
@@ -46,9 +46,9 @@ open class Stepper: View {
             .anchorEqualLeading(atTrailing: backImage, padding: .md)
         
         nextImage.constraintable
-            .anchorEqualTop(on: self)
+            .anchorEqualTop(atTop: self)
             .anchorEqualTrailing(atTrailing: self)
-            .anchorEqualBottom(on: self)
+            .anchorEqualBottom(atBottom: self)
                 
         updateProgress()
     }

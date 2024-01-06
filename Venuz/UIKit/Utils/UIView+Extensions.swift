@@ -6,26 +6,26 @@ extension UIView {
         Theme.shared
     }
     
-    var constraintable: Contraintable {
+    public var constraintable: Contraintable {
         Contraintable(self)
     }
     
     @discardableResult
-    func enableInteraction() -> Self  {
+    public func enableInteraction() -> Self  {
         isUserInteractionEnabled = true
         
         return self
     }
     
     @discardableResult
-    func disableInteraction() -> Self  {
+    public func disableInteraction() -> Self  {
         isUserInteractionEnabled = false
         
         return self
     }
     
     @discardableResult
-    func enableViewCode() -> Self  {
+    public func enableViewCode() -> Self  {
         if translatesAutoresizingMaskIntoConstraints {
             translatesAutoresizingMaskIntoConstraints = false
         }
@@ -34,19 +34,19 @@ extension UIView {
     }
     
     @discardableResult
-    func setToClip() -> Self {
+    public func setToClip() -> Self {
         clipsToBounds = true
         return self
     }
     
     @discardableResult
-    func setBackgroundColor(_ rgb: RGBA) -> Self {
+    public func setBackgroundColor(_ rgb: RGBA) -> Self {
         backgroundColor = rgb.uiColor
         return self
     }
     
     @discardableResult
-    func setTintColor(_ rgb: RGBA) -> Self {
+    public func setTintColor(_ rgb: RGBA) -> Self {
         tintColor = rgb.uiColor
         return self
     }

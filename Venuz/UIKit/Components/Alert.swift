@@ -4,11 +4,16 @@ open class Alert: Card {
         .setIcon(.bubbleRightFill)
         .setScaleAspecToFit()
     
-    private lazy var titleLabel = Label(.xl)
+    private lazy var closeImage = Image(.bubbleRight)
+        .setIcon(.x)
+        .setScaleAspecToFit()
+        .addTapAction(target: self, action: #selector(closeAlertActionHandler))
+    
+    private lazy var titleLabel = Label(.lg)
     
     private lazy var descriptinoLabel = Label(.md)
     
-    public init(icon: Icon = .bubbleRight, title: String = String(), description: String = String()) {
+    public init(icon: Icon = .bubbleRight, title: String, description: String = String()) {
         super.init()
         
         image.setIcon(icon)
@@ -17,7 +22,8 @@ open class Alert: Card {
         
         let textContainer = Stack.Vertical(titleLabel, descriptinoLabel)
         let iconContainer = Stack.Vertical(image, UIView())
-        let alertContainer = Stack.Horizontal(spacing: .md, iconContainer, textContainer)
+        let closeContainer = Stack.Vertical(closeImage, UIView())
+        let alertContainer = Stack.Horizontal(spacing: .md, iconContainer, textContainer, closeContainer)
         
         attach(alertContainer)
         
@@ -44,5 +50,12 @@ open class Alert: Card {
         image.setIcon(icon)
         
         return self
+    }
+    
+    @objc private func closeAlertActionHandler() {
+        UIView.animate(withDuration: 0.2) { [weak self] in
+            self?.isHidden = true
+            self?.alpha = 0
+        }
     }
 }
