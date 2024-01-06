@@ -1,14 +1,10 @@
-open class Separator: UIView {
-    private let theme = Theme.shared
-    
+open class Separator: View {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = theme.token.color.highlightBackground.uiColor
-        
-        constraintable.height(1)
-        
+        setBackground(theme.token.color.highlightBackground)
         disableInteraction()
+        constraintable.height(1)
     }
     
     @available(*, unavailable)

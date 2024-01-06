@@ -1,4 +1,4 @@
-struct Edge {
+public struct Edge {
     let leading: Spacing
     let top: Spacing
     let trailing: Spacing

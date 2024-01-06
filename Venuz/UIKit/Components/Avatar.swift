@@ -14,7 +14,7 @@ open class Avatar: Card {
     
     public init(state: State = .loading) {
         super.init()
-        clipsToBounds = true
+        setToClip()
        
         addSubview(image)
         addSubview(placeholder)

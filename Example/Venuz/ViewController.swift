@@ -3,7 +3,7 @@ import Venuz
 
 final class MainViewController: ViewController {
     
-    private let avatar = Avatar()
+    private let avatar = Badge("atual")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ final class MainViewController: ViewController {
         ])
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.avatar.setState(.unavailable("PP"))
+            //self.avatar.setState(.unavailable("PP"))
             let alertDialog = AlertDialogViewController(
                 title: "Are you sure?",
                 description: "This action cannot be undone. This will permanetily delete your account and remove your data"

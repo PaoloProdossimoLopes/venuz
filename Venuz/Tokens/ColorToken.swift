@@ -13,10 +13,3 @@ protocol ColorToken {
     
     var transparent: RGBA { get }
 }
-
-struct RGBA {
-    let r: CGFloat
-    let g: CGFloat
-    let b: CGFloat
-    var a: CGFloat = 1
-}

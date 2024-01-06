@@ -12,6 +12,9 @@
 		3634D69C1FA409461A684E7513A90FF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		38C51004575AC8D2EE67325F7D100C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */; };
 		3D41F06C13EAD311EBBF9DC062B5682F /* AphroditeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */; };
+		528AC2992B48CF3E003AE080 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2982B48CF3E003AE080 /* Badge.swift */; };
+		528AC29B2B48D323003AE080 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC29A2B48D323003AE080 /* View.swift */; };
+		528AC29D2B48D4A5003AE080 /* RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC29C2B48D4A5003AE080 /* RGBA.swift */; };
 		5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */; };
 		626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */; };
 		66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B6A07E4CA3A1AA1847992CCCCE67E /* Theme.swift */; };
@@ -71,6 +74,9 @@
 		33687D24A26E84B2159948E5FDFC54AF /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		39B54FCA289ABE586352565F34B558BE /* Venuz */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Venuz; path = Venuz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		528AC2982B48CF3E003AE080 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		528AC29A2B48D323003AE080 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		528AC29C2B48D4A5003AE080 /* RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBA.swift; sourceTree = "<group>"; };
 		538F3043385D3337E3E8BF23CA108DC7 /* Venuz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Venuz.modulemap; sourceTree = "<group>"; };
 		541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AphroditeToken.swift; sourceTree = "<group>"; };
 		58246579F35AA2ED64E6BC9409236243 /* Pods-Venuz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Venuz_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -145,6 +151,28 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		528AC29E2B48D4C5003AE080 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B131968A2B452C6500B5B8D2 /* Alert.swift */,
+				B131968C2B4534CE00B5B8D2 /* Image.swift */,
+				FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */,
+				33687D24A26E84B2159948E5FDFC54AF /* Text.swift */,
+				B16254502B44D8A9001EC92A /* Button.swift */,
+				B131967E2B4514CE00B5B8D2 /* Edge.swift */,
+				B13196802B4514E300B5B8D2 /* Contraintable.swift */,
+				B13196842B45245200B5B8D2 /* Separator.swift */,
+				B13196862B45254300B5B8D2 /* Card.swift */,
+				B13196902B45352400B5B8D2 /* Stack.swift */,
+				B13196922B4536D900B5B8D2 /* AlertDialogViewController.swift */,
+				B1396BA62B46C88A009AB586 /* Avatar.swift */,
+				B1396BAA2B46D16B009AB586 /* Loader.swift */,
+				528AC2982B48CF3E003AE080 /* Badge.swift */,
+				528AC29A2B48D323003AE080 /* View.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				B1396BAC2B46D17F009AB586 /* Utils */,
+				528AC29C2B48D4A5003AE080 /* RGBA.swift */,
 				B13196882B452AE600B5B8D2 /* Icon.swift */,
 				541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */,
 				B636A1D8B81CF5EBDB5735356E673100 /* ColorToken.swift */,
@@ -182,21 +211,9 @@
 		79ED015375C92E1EE3DE98B862CC397F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B162544F2B44D748001EC92A /* Utils */,
-				B131968A2B452C6500B5B8D2 /* Alert.swift */,
-				B131968C2B4534CE00B5B8D2 /* Image.swift */,
-				FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */,
-				33687D24A26E84B2159948E5FDFC54AF /* Text.swift */,
-				B16254502B44D8A9001EC92A /* Button.swift */,
-				B131967E2B4514CE00B5B8D2 /* Edge.swift */,
-				B13196802B4514E300B5B8D2 /* Contraintable.swift */,
-				B13196842B45245200B5B8D2 /* Separator.swift */,
-				B13196862B45254300B5B8D2 /* Card.swift */,
-				B13196902B45352400B5B8D2 /* Stack.swift */,
-				B13196922B4536D900B5B8D2 /* AlertDialogViewController.swift */,
-				B1396BA62B46C88A009AB586 /* Avatar.swift */,
 				B1396BA82B46C95E009AB586 /* Media.xcassets */,
-				B1396BAA2B46D16B009AB586 /* Loader.swift */,
+				B162544F2B44D748001EC92A /* Utils */,
+				528AC29E2B48D4C5003AE080 /* Components */,
 			);
 			name = UIKit;
 			path = Venuz/UIKit;
@@ -419,7 +436,9 @@
 				B131968D2B4534CE00B5B8D2 /* Image.swift in Sources */,
 				3D41F06C13EAD311EBBF9DC062B5682F /* AphroditeToken.swift in Sources */,
 				9840772525556D5BA3CA15A314D0332A /* ColorToken.swift in Sources */,
+				528AC29B2B48D323003AE080 /* View.swift in Sources */,
 				B131968B2B452C6500B5B8D2 /* Alert.swift in Sources */,
+				528AC29D2B48D4A5003AE080 /* RGBA.swift in Sources */,
 				B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */,
 				B13196772B44E7DD00B5B8D2 /* Radius.swift in Sources */,
 				B1396BB22B46D1C1009AB586 /* Img+Extensions.swift in Sources */,
@@ -428,6 +447,7 @@
 				38C51004575AC8D2EE67325F7D100C30 /* ViewController.swift in Sources */,
 				B13196932B4536D900B5B8D2 /* AlertDialogViewController.swift in Sources */,
 				A0A67BE0B9B7751FD68848D46DCE8596 /* FontSize.swift in Sources */,
+				528AC2992B48CF3E003AE080 /* Badge.swift in Sources */,
 				B131968F2B45351400B5B8D2 /* Icon+Extensions.swift in Sources */,
 				5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */,
 				B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */,
