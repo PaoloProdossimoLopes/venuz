@@ -3,7 +3,7 @@ import Venuz
 
 final class MainViewController: ViewController {
     
-    private let avatar = Stepper(initial: 1, total: 3)
+    private let avatar = Switch()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,8 +12,7 @@ final class MainViewController: ViewController {
         
         NSLayoutConstraint.activate([
             avatar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
-            avatar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            avatar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            avatar.widthAnchor.constraint(equalToConstant: 120)
         ])
         
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
