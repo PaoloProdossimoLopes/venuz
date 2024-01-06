@@ -14,7 +14,7 @@ open class Card: View {
         }
         
         addSubview(container)
-        setBackground(theme.token.color.background)
+        setBackgroundColor(theme.token.color.background)
         
         setContentEdge(.axis(v: .lg, h: .md))
     }

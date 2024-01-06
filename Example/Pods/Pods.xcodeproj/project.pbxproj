@@ -15,6 +15,7 @@
 		528AC2992B48CF3E003AE080 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2982B48CF3E003AE080 /* Badge.swift */; };
 		528AC29B2B48D323003AE080 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC29A2B48D323003AE080 /* View.swift */; };
 		528AC29D2B48D4A5003AE080 /* RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC29C2B48D4A5003AE080 /* RGBA.swift */; };
+		528AC2A02B49335D003AE080 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC29F2B49335D003AE080 /* Checkbox.swift */; };
 		5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */; };
 		626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */; };
 		66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B6A07E4CA3A1AA1847992CCCCE67E /* Theme.swift */; };
@@ -77,6 +78,7 @@
 		528AC2982B48CF3E003AE080 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		528AC29A2B48D323003AE080 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		528AC29C2B48D4A5003AE080 /* RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBA.swift; sourceTree = "<group>"; };
+		528AC29F2B49335D003AE080 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		538F3043385D3337E3E8BF23CA108DC7 /* Venuz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Venuz.modulemap; sourceTree = "<group>"; };
 		541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AphroditeToken.swift; sourceTree = "<group>"; };
 		58246579F35AA2ED64E6BC9409236243 /* Pods-Venuz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Venuz_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				B1396BAA2B46D16B009AB586 /* Loader.swift */,
 				528AC2982B48CF3E003AE080 /* Badge.swift */,
 				528AC29A2B48D323003AE080 /* View.swift */,
+				528AC29F2B49335D003AE080 /* Checkbox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */,
 				B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */,
 				B13196892B452AE600B5B8D2 /* Icon.swift in Sources */,
+				528AC2A02B49335D003AE080 /* Checkbox.swift in Sources */,
 				B13196912B45352400B5B8D2 /* Stack.swift in Sources */,
 				B1396BB02B46D19E009AB586 /* Img.swift in Sources */,
 				B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */,

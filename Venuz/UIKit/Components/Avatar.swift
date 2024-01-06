@@ -26,9 +26,7 @@ open class Avatar: Card {
         
         setState(state)
         
-        constraintable
-            .minWidth(36)
-            .minHeight(36)
+        constraintable.equalSize(36)
     }
     
     @discardableResult

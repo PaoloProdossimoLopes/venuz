@@ -10,7 +10,7 @@ open class Badge: View {
         
         addSubview(label)
         
-        setBackground(theme.token.color.accent)
+        setBackgroundColor(theme.token.color.accent)
         label.constraintable.fill(on: self, edge: .axis(v: .sm, h: .md))
     }
     
