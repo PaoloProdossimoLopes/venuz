@@ -55,4 +55,16 @@ open class Image: UIImageView {
         contentMode = .scaleAspectFill
         return self
     }
+    
+    @discardableResult
+    public func addTapAction(target: Any?, action: Selector) -> Self {
+        if !isUserInteractionEnabled {
+            isUserInteractionEnabled = true
+        }
+        
+        let tapAction = UITapGestureRecognizer(target: target, action: action)
+        addGestureRecognizer(tapAction)
+        
+        return self
+    }
 }

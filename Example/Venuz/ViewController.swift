@@ -3,7 +3,7 @@ import Venuz
 
 final class MainViewController: ViewController {
     
-    private let avatar = Progressbar()
+    private let avatar = Stepper(initial: 1, total: 3)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,8 @@ final class MainViewController: ViewController {
             avatar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.avatar.setProgress(20)
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.avatar.setProgress(20)
+//        }
     }
 }

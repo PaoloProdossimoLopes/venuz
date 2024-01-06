@@ -32,8 +32,8 @@ open class AlertDialogViewController: ViewController {
         
         cardContainer.constraintable
             .centerY(on: view)
-            .anchorEqualLeading(on: view, padding: .lg)
-            .anchorEqualTrailing(on: view, padding: .lg)
+            .anchorEqualLeading(atLeading: view, padding: .lg)
+            .anchorEqualTrailing(atTrailing: view, padding: .lg)
         
         modalPresentationStyle = .overFullScreen
         

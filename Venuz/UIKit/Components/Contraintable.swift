@@ -24,13 +24,23 @@ final class Contraintable {
     }
     
     @discardableResult
-    func anchorEqualLeading(on view: UIView, padding: Spacing = .none) -> Self {
+    func anchorEqualLeading(atLeading view: UIView, padding: Spacing = .none) -> Self {
         active(item.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding.value))
     }
     
     @discardableResult
-    func anchorEqualTrailing(on view: UIView, padding: Spacing = .none) -> Self {
+    func anchorEqualLeading(atTrailing view: UIView, padding: Spacing = .none) -> Self {
+        active(item.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: padding.value))
+    }
+    
+    @discardableResult
+    func anchorEqualTrailing(atTrailing view: UIView, padding: Spacing = .none) -> Self {
         active(item.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding.value))
+    }
+    
+    @discardableResult
+    func anchorEqualTrailing(atLeading view: UIView, padding: Spacing = .none) -> Self {
+        active(item.trailingAnchor.constraint(equalTo: view.leadingAnchor, constant: -padding.value))
     }
     
     @discardableResult
@@ -75,9 +85,9 @@ final class Contraintable {
     
     @discardableResult
     func fill(on view: UIView, edge: Edge = .none) -> Self {
-        anchorEqualLeading(on: view, padding: edge.leading)
+        anchorEqualLeading(atLeading: view, padding: edge.leading)
             .anchorEqualTop(on: view, padding: edge.top)
-            .anchorEqualTrailing(on: view, padding: edge.trailing)
+            .anchorEqualTrailing(atTrailing: view, padding: edge.trailing)
             .anchorEqualBottom(on: view, padding: edge.bottom)
     }
     
@@ -85,9 +95,9 @@ final class Contraintable {
     func fillToParrent(edge: Edge = .none) -> Self {
         guard let view = item.superview else { return self }
         
-        return anchorEqualLeading(on: view, padding: edge.leading)
+        return anchorEqualLeading(atLeading: view, padding: edge.leading)
             .anchorEqualTop(on: view, padding: edge.top)
-            .anchorEqualTrailing(on: view, padding: edge.trailing)
+            .anchorEqualTrailing(atTrailing: view, padding: edge.trailing)
             .anchorEqualBottom(on: view, padding: edge.bottom)
     }
     
