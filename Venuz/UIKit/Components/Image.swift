@@ -2,8 +2,6 @@ import UIKit
 
 open class Image: UIImageView {
     
-    private let theme = Theme.shared
-    
     public convenience init(_ icon: Icon) {
         self.init()
         setIcon(icon)

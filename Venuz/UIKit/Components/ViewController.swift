@@ -1,6 +1,4 @@
 open class ViewController: UIViewController {
-    private let theme = Theme.shared
-    
     public init() {
         super.init(nibName: nil, bundle: nil)
         

@@ -3,7 +3,7 @@ import Venuz
 
 final class MainViewController: ViewController {
     
-    private let avatar = Checkbox()
+    private let avatar = Progressbar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -11,8 +11,13 @@ final class MainViewController: ViewController {
         avatar.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            avatar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             avatar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
+            avatar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            avatar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.avatar.setProgress(20)
+        }
     }
 }

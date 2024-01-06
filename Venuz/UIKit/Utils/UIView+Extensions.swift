@@ -2,6 +2,10 @@ import UIKit
 
 extension UIView {
     
+    var theme: Theme {
+        Theme.shared
+    }
+    
     var constraintable: Contraintable {
         Contraintable(self)
     }

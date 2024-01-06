@@ -1,7 +1,6 @@
 import UIKit
 
 open class View: UIControl {
-    let theme = Theme.shared
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

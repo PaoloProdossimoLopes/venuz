@@ -7,8 +7,6 @@ open class Label: UILabel {
         case standard
     }
     
-    private let theme = Theme.shared
-    
     public convenience init(_ size: FontSize) {
         self.init(frame: .zero)
         setFontSize(size)

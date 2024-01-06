@@ -1,7 +1,5 @@
 open class AlertDialogViewController: ViewController {
     
-    private let theme = Theme.shared
-    
     private lazy var closeImage = Image(.x)
         .addTapAction(target: self, action: #selector(closeButtonActionHandler))
         .setScaleAspecToFit()
