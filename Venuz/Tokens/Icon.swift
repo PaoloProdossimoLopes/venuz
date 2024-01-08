@@ -6,5 +6,6 @@
     case bubbleRight = "bubble.right"
     case bubbleRightFill = "bubble.right.fill"
     case x = "xmark"
+    case xFilled = "xmark.circle.fill"
     case checkmark
 }

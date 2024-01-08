@@ -19,8 +19,13 @@ final class MainViewController: ViewController {
         description: "Temos novos componentes como Switch e Checkbox"
     )
     
+    private lazy var filterSeachBar = Input(placeholder: "Email")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dimissKeyboardTapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(dimissKeyboardTapGesture)
         
         let container = Stack.Vertical(
             Stack.Horizontal(avatarImage, nameLabel)
@@ -30,6 +35,8 @@ final class MainViewController: ViewController {
                 .setSpacing(.sm),
             
             newFeaturesAvaliableAlert,
+            
+            filterSeachBar,
             
             View()
         )

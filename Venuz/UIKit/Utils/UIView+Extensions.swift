@@ -59,9 +59,9 @@ extension UIView {
     }
     
     @discardableResult
-    public func setBoader(_ rgba: RGBA) -> Self {
+    public func setBoader(_ rgba: RGBA, lineWidth width: LineWidth = .xs) -> Self {
         layer.borderColor = rgba.uiColor.cgColor
-        layer.borderWidth = 1
+        layer.borderWidth = width.value
         
         return self
     }
@@ -70,6 +70,22 @@ extension UIView {
     public func removeBoader() -> Self {
         layer.borderColor = nil
         layer.borderWidth = 0
+        
+        return self
+    }
+    
+    @discardableResult
+    public func setVisible() -> Self {
+        isHidden = false
+        alpha = 1
+        
+        return self
+    }
+    
+    @discardableResult
+    public func setInvisible() -> Self {
+        isHidden = true
+        alpha = 0
         
         return self
     }
