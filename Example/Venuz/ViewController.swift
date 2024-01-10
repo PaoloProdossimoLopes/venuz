@@ -21,7 +21,7 @@ final class MainViewController: ViewController {
     
     private lazy var filterSeachBar = Input(placeholder: "Email")
     
-    private lazy var toggleGroupButton = ToggleGroupButton()
+    private lazy var toggleGroupButton = SingleSelectionToggleButtonGroup()
         .addToggleButton(
             ToggleButton(
                 Label(.lg)

@@ -1,7 +1,7 @@
 import UIKit
 
-open class ToggleGroupButton: View {
-    private var toggleButtons = [ToggleButton]()
+open class ToggleButtonGroup: View {
+    public private(set) var toggleButtons = [ToggleButton]()
     private var container = Stack.Vertical(spacing: .md)
     
     public init(axis: NSLayoutConstraint.Axis = .horizontal) {
@@ -13,12 +13,13 @@ open class ToggleGroupButton: View {
         container.constraintable.fillToParrent(edge: .equal(.md))
     }
     
-    public func getSelectedToggleButton() -> ToggleButton? {
-        toggleButtons.first { $0.isSelected }
+    @discardableResult
+    public func selectToggleButton(_ toggleButton: ToggleButton) -> Self {
+        self
     }
     
     @discardableResult
-    public func selectToggleButton(at index: Int) -> Self {
+    func selectToggleButton(at index: Int) -> Self {
         guard toggleButtons.indices.contains(index) else {
             return self
         }
@@ -28,18 +29,8 @@ open class ToggleGroupButton: View {
     }
     
     @discardableResult
-    public func selectToggleButton(_ toggleButton: ToggleButton) -> Self {
-        toggleButtons
-            .filter { $0 !== toggleButton }
-            .forEach { $0.isSelected = false }
-        
-        return self
-    }
-    
-    @discardableResult
     public func addToggleButton(_ toggleButton: ToggleButton) -> Self {
         toggleButtons.append(toggleButton)
-        toggleButton.setAction(toggleButtonActionHandler)
         updateContainerStack()
         return self
     }
