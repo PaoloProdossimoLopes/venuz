@@ -124,20 +124,3 @@ extension Input: UITextFieldDelegate {
         return true
     }
 }
-
-extension CGRect {
-    func inset(padding spacing: Edge) -> Self {
-        inset(by: spacing.insets)
-    }
-}
-
-extension Edge {
-    var insets: UIEdgeInsets {
-        UIEdgeInsets(
-            top: top.value,
-            left: leading.value,
-            bottom: bottom.value,
-            right: trailing.value
-        )
-    }
-}

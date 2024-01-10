@@ -22,6 +22,10 @@
 		528AC2A82B4959F7003AE080 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2A72B4959F7003AE080 /* Switcher.swift */; };
 		528AC2AA2B4C113F003AE080 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2A92B4C113F003AE080 /* Input.swift */; };
 		528AC2AC2B4C2B17003AE080 /* LineWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2AB2B4C2B17003AE080 /* LineWidth.swift */; };
+		528AC2AE2B4DF5E7003AE080 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2AD2B4DF5E7003AE080 /* CGRect+Extensions.swift */; };
+		528AC2B02B4DF5F4003AE080 /* Edge+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2AF2B4DF5F4003AE080 /* Edge+Extensions.swift */; };
+		528AC2B22B4DF6EC003AE080 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2B12B4DF6EC003AE080 /* ToggleButton.swift */; };
+		528AC2B42B4EB975003AE080 /* ToggleGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2B32B4EB975003AE080 /* ToggleGroupButton.swift */; };
 		5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */; };
 		626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */; };
 		66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B6A07E4CA3A1AA1847992CCCCE67E /* Theme.swift */; };
@@ -91,6 +95,10 @@
 		528AC2A72B4959F7003AE080 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		528AC2A92B4C113F003AE080 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		528AC2AB2B4C2B17003AE080 /* LineWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWidth.swift; sourceTree = "<group>"; };
+		528AC2AD2B4DF5E7003AE080 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		528AC2AF2B4DF5F4003AE080 /* Edge+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edge+Extensions.swift"; sourceTree = "<group>"; };
+		528AC2B12B4DF6EC003AE080 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		528AC2B32B4EB975003AE080 /* ToggleGroupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleGroupButton.swift; sourceTree = "<group>"; };
 		538F3043385D3337E3E8BF23CA108DC7 /* Venuz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Venuz.modulemap; sourceTree = "<group>"; };
 		541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AphroditeToken.swift; sourceTree = "<group>"; };
 		58246579F35AA2ED64E6BC9409236243 /* Pods-Venuz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Venuz_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -187,6 +195,8 @@
 				528AC2A12B493CFA003AE080 /* Progressbar.swift */,
 				528AC2A52B494619003AE080 /* Stepper.swift */,
 				528AC2A92B4C113F003AE080 /* Input.swift */,
+				528AC2B12B4DF6EC003AE080 /* ToggleButton.swift */,
+				528AC2B32B4EB975003AE080 /* ToggleGroupButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,6 +330,8 @@
 				B131968E2B45351400B5B8D2 /* Icon+Extensions.swift */,
 				B1396BB12B46D1C1009AB586 /* Img+Extensions.swift */,
 				528AC2A32B4942F9003AE080 /* UIViewController+Extensions.swift */,
+				528AC2AD2B4DF5E7003AE080 /* CGRect+Extensions.swift */,
+				528AC2AF2B4DF5F4003AE080 /* Edge+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -461,6 +473,7 @@
 				B131968B2B452C6500B5B8D2 /* Alert.swift in Sources */,
 				528AC2A42B4942F9003AE080 /* UIViewController+Extensions.swift in Sources */,
 				528AC29D2B48D4A5003AE080 /* RGBA.swift in Sources */,
+				528AC2B02B4DF5F4003AE080 /* Edge+Extensions.swift in Sources */,
 				B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */,
 				B13196772B44E7DD00B5B8D2 /* Radius.swift in Sources */,
 				528AC2AC2B4C2B17003AE080 /* LineWidth.swift in Sources */,
@@ -470,6 +483,7 @@
 				B1396BB22B46D1C1009AB586 /* Img+Extensions.swift in Sources */,
 				B16254512B44D8A9001EC92A /* Button.swift in Sources */,
 				B1396BAB2B46D16B009AB586 /* Loader.swift in Sources */,
+				528AC2AE2B4DF5E7003AE080 /* CGRect+Extensions.swift in Sources */,
 				38C51004575AC8D2EE67325F7D100C30 /* ViewController.swift in Sources */,
 				B13196932B4536D900B5B8D2 /* AlertDialogViewController.swift in Sources */,
 				528AC2A22B493CFA003AE080 /* Progressbar.swift in Sources */,
@@ -478,10 +492,12 @@
 				B131968F2B45351400B5B8D2 /* Icon+Extensions.swift in Sources */,
 				5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */,
 				B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */,
+				528AC2B42B4EB975003AE080 /* ToggleGroupButton.swift in Sources */,
 				B13196892B452AE600B5B8D2 /* Icon.swift in Sources */,
 				528AC2A02B49335D003AE080 /* Checkbox.swift in Sources */,
 				B13196912B45352400B5B8D2 /* Stack.swift in Sources */,
 				B1396BB02B46D19E009AB586 /* Img.swift in Sources */,
+				528AC2B22B4DF6EC003AE080 /* ToggleButton.swift in Sources */,
 				B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */,
 				B131967F2B4514CE00B5B8D2 /* Edge.swift in Sources */,
 				B1396BA72B46C88A009AB586 /* Avatar.swift in Sources */,

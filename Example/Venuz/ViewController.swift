@@ -21,10 +21,29 @@ final class MainViewController: ViewController {
     
     private lazy var filterSeachBar = Input(placeholder: "Email")
     
+    private lazy var toggleGroupButton = ToggleGroupButton()
+        .addToggleButton(
+            ToggleButton(
+                Label(.lg)
+                    .setText("B")
+                    .setAlignment(.center)
+            )
+        )
+        .addToggleButton(
+            ToggleButton(
+                Label(.lg)
+                    .setText("I")
+                    .setAlignment(.center)
+            )
+        )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dimissKeyboardTapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        let dimissKeyboardTapGesture = UITapGestureRecognizer(
+            target: view,
+            action: #selector(UIView.endEditing)
+        )
         view.addGestureRecognizer(dimissKeyboardTapGesture)
         
         let container = Stack.Vertical(
@@ -37,6 +56,8 @@ final class MainViewController: ViewController {
             newFeaturesAvaliableAlert,
             
             filterSeachBar,
+            
+            Stack.Horizontal(toggleGroupButton, UIView()),
             
             View()
         )
