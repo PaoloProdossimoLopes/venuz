@@ -39,7 +39,7 @@ open class ToggleButton: Card {
     }
     
     private func changeToggleButton(isSelected: Bool) {
-        UIView.animate(withDuration: 0.2) {
+        UIView.animate(withDuration: 0.1) {
             if isSelected {
                 self.setBackgroundColor(self.theme.token.color.highlightBackground)
             } else {
