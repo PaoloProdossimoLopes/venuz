@@ -354,6 +354,7 @@
 			baseConfigurationReference = F77C5050D1A526265D729E84 /* Pods-Venuz_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y487CY958A;
 				INFOPLIST_FILE = Venuz/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Venuz;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -374,6 +375,7 @@
 			baseConfigurationReference = 6E413C8ECD4BA697FC2029E7 /* Pods-Venuz_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y487CY958A;
 				INFOPLIST_FILE = Venuz/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Venuz;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

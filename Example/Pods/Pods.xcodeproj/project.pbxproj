@@ -28,6 +28,7 @@
 		528AC2B42B4EB975003AE080 /* SingleSelectionToggleButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2B32B4EB975003AE080 /* SingleSelectionToggleButtonGroup.swift */; };
 		528AC2B62B4EBD76003AE080 /* MultipleSelectionToggleButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2B52B4EBD76003AE080 /* MultipleSelectionToggleButtonGroup.swift */; };
 		528AC2B82B4EBE25003AE080 /* SelectionToggleButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2B72B4EBE25003AE080 /* SelectionToggleButtonGroup.swift */; };
+		528AC2BA2B4F2CCF003AE080 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2B92B4F2CCF003AE080 /* List.swift */; };
 		5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */; };
 		626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */; };
 		66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B6A07E4CA3A1AA1847992CCCCE67E /* Theme.swift */; };
@@ -59,7 +60,7 @@
 		B162544C2B44D708001EC92A /* RGBA+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544B2B44D708001EC92A /* RGBA+Extensions.swift */; };
 		B162544E2B44D72B001EC92A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162544D2B44D72B001EC92A /* UIView+Extensions.swift */; };
 		B16254512B44D8A9001EC92A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16254502B44D8A9001EC92A /* Button.swift */; };
-		B9854D19BAFE1C061145BDE971383DA4 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33687D24A26E84B2159948E5FDFC54AF /* Text.swift */; };
+		B9854D19BAFE1C061145BDE971383DA4 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33687D24A26E84B2159948E5FDFC54AF /* Label.swift */; };
 		CA3CE8F384A32B05F0C410BEF9280170 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C6640B12E5BF437A1E1E777C9CFA2 /* Token.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +85,7 @@
 		1F366149A624B2820FCB9A57DA0768D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		25CC9EEE2CF0324B19B32124DBE2CEB3 /* Pods-Venuz_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Venuz_Example"; path = Pods_Venuz_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275C6640B12E5BF437A1E1E777C9CFA2 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		33687D24A26E84B2159948E5FDFC54AF /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		33687D24A26E84B2159948E5FDFC54AF /* Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		39B54FCA289ABE586352565F34B558BE /* Venuz */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Venuz; path = Venuz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		528AC2982B48CF3E003AE080 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		528AC2B32B4EB975003AE080 /* SingleSelectionToggleButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionToggleButtonGroup.swift; sourceTree = "<group>"; };
 		528AC2B52B4EBD76003AE080 /* MultipleSelectionToggleButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionToggleButtonGroup.swift; sourceTree = "<group>"; };
 		528AC2B72B4EBE25003AE080 /* SelectionToggleButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionToggleButtonGroup.swift; sourceTree = "<group>"; };
+		528AC2B92B4F2CCF003AE080 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		538F3043385D3337E3E8BF23CA108DC7 /* Venuz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Venuz.modulemap; sourceTree = "<group>"; };
 		541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AphroditeToken.swift; sourceTree = "<group>"; };
 		58246579F35AA2ED64E6BC9409236243 /* Pods-Venuz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Venuz_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -181,9 +183,10 @@
 			isa = PBXGroup;
 			children = (
 				B131968A2B452C6500B5B8D2 /* Alert.swift */,
+				528AC2A72B4959F7003AE080 /* Switcher.swift */,
 				B131968C2B4534CE00B5B8D2 /* Image.swift */,
 				FA3C3BB3FEAF634A33F5B84790AF5671 /* ViewController.swift */,
-				33687D24A26E84B2159948E5FDFC54AF /* Text.swift */,
+				33687D24A26E84B2159948E5FDFC54AF /* Label.swift */,
 				B16254502B44D8A9001EC92A /* Button.swift */,
 				B131967E2B4514CE00B5B8D2 /* Edge.swift */,
 				B13196802B4514E300B5B8D2 /* Contraintable.swift */,
@@ -203,6 +206,7 @@
 				528AC2B32B4EB975003AE080 /* SingleSelectionToggleButtonGroup.swift */,
 				528AC2B52B4EBD76003AE080 /* MultipleSelectionToggleButtonGroup.swift */,
 				528AC2B72B4EBE25003AE080 /* SelectionToggleButtonGroup.swift */,
+				528AC2B92B4F2CCF003AE080 /* List.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -249,7 +253,6 @@
 				B1396BA82B46C95E009AB586 /* Media.xcassets */,
 				B162544F2B44D748001EC92A /* Utils */,
 				528AC29E2B48D4C5003AE080 /* Components */,
-				528AC2A72B4959F7003AE080 /* Switcher.swift */,
 			);
 			name = UIKit;
 			path = Venuz/UIKit;
@@ -509,9 +512,10 @@
 				B131967D2B44F94B00B5B8D2 /* Spacing+Extensions.swift in Sources */,
 				B131967F2B4514CE00B5B8D2 /* Edge.swift in Sources */,
 				B1396BA72B46C88A009AB586 /* Avatar.swift in Sources */,
-				B9854D19BAFE1C061145BDE971383DA4 /* Text.swift in Sources */,
+				B9854D19BAFE1C061145BDE971383DA4 /* Label.swift in Sources */,
 				B1396BAE2B46D188009AB586 /* Bundle+Extensions.swift in Sources */,
 				66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */,
+				528AC2BA2B4F2CCF003AE080 /* List.swift in Sources */,
 				B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */,
 				CA3CE8F384A32B05F0C410BEF9280170 /* Token.swift in Sources */,
 				B13196872B45254300B5B8D2 /* Card.swift in Sources */,

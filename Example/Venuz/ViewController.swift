@@ -5,7 +5,7 @@ final class MainViewController: ViewController {
     private lazy var avatarImage = Avatar()
     
     private lazy var nameLabel = Label(.md)
-        .setText("Paolo P. Lopes")
+        .setText("Jhon doe")
     
     private lazy var wellcomeLabel = Label(.xxl)
         .setText("Bem vindo")
@@ -19,34 +19,17 @@ final class MainViewController: ViewController {
         description: "Temos novos componentes como Switch e Checkbox"
     )
     
-    private lazy var filterSeachBar = Input(placeholder: "Email")
+    private lazy var taskListTitle = Label(.lg)
+        .setText("Tarefas")
     
-    private lazy var toggleGroupButton = SingleSelectionToggleButtonGroup()
-        .addToggleButton(
-            ToggleButton(
-                Label(.lg)
-                    .setText("B")
-                    .setAlignment(.center)
-            )
-        )
-        .addToggleButton(
-            ToggleButton(
-                Label(.lg)
-                    .setText("I")
-                    .setAlignment(.center)
-            )
-        )
+    private lazy var taskList = List()
+        .disableScroll()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dimissKeyboardTapGesture = UITapGestureRecognizer(
-            target: view,
-            action: #selector(UIView.endEditing)
-        )
-        view.addGestureRecognizer(dimissKeyboardTapGesture)
-        
         let container = Stack.Vertical(
+            spacing: .lg, 
             Stack.Horizontal(avatarImage, nameLabel)
                 .setSpacing(.md),
             
@@ -55,11 +38,8 @@ final class MainViewController: ViewController {
             
             newFeaturesAvaliableAlert,
             
-            filterSeachBar,
-            
-            Stack.Horizontal(toggleGroupButton, UIView()),
-            
-            View()
+            Stack.Vertical(taskListTitle, taskList)
+                .setSpacing(.none)
         )
             .setSpacing(.md)
         view.addSubview(container)
@@ -73,6 +53,24 @@ final class MainViewController: ViewController {
             } else {
                 self.avatarImage.setState(.ready(UIImage(named: "AppIcon")!))
             }
+            
+            self.taskList.addListSection(ListSection(
+                headerController: NoListHeaderController(),
+                cellsControllers: [
+                    SelectListCellController(viewData: SelectListCell.ViewData(
+                        taskCode: "TASK-8782",
+                        taskDescription: "You can't compress the program without quantifying the open-source SSD pi"
+                    )),
+                    SelectListCellController(viewData: SelectListCell.ViewData(
+                        taskCode: "TASK-7878",
+                        taskDescription: "Try to calculate the EXE feed, maybe it will index the multi-byte pixel!"
+                    )),
+                    SelectListCellController(viewData: SelectListCell.ViewData(
+                        taskCode: "TASK-7839",
+                        taskDescription: "We need to bypass the neural TCP card!"
+                    )),
+                ]
+            ))
         }
     }
 }

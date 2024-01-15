@@ -25,7 +25,7 @@ public final class Contraintable {
     
     @discardableResult
     public func anchorEqualTop(atBottom view: UIView, padding: Spacing = .none) -> Self {
-        active(item.topAnchor.constraint(equalTo: view.topAnchor, constant: padding.value))
+        active(item.topAnchor.constraint(equalTo: view.bottomAnchor, constant: padding.value))
     }
     
     @discardableResult

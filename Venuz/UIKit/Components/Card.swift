@@ -44,4 +44,10 @@ open class Card: View {
         
         return self
     }
+    
+    @discardableResult
+    public func setSpacing(spacing: Spacing = .xs) -> Self {
+        container.setSpacing(spacing)
+        return self
+    }
 }

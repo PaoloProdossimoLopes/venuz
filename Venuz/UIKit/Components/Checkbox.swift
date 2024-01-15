@@ -19,10 +19,9 @@ open class Checkbox: Card {
         }
     }
     
-    public init(isChecked: Bool = false) {
+    public init(isChecked: Bool = true) {
         super.init()
-        
-        setupState(isSelected: isSelected)
+        isSelected = isChecked
         
         addSubview(image)
         
@@ -33,12 +32,10 @@ open class Checkbox: Card {
         constraintable.equalSize(36)
         
         addTarget(self, action: #selector(checkboxTapActionHandler), for: .touchUpInside)
-        
-        feedback.prepare()
     }
     
     private func setupState(isSelected: Bool) {
-        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut) { [weak self] in
+        UIView.animate(withDuration: 0.1) { [weak self] in
             isSelected ?
                 self?.setupCheckedState() :
                 self?.setupUncheckedState()
