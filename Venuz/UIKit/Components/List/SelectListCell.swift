@@ -22,7 +22,7 @@ public final class SelectListCell: ReusableListCell {
         
         setBackgroundColor(theme.token.color.transparent)
         
-        let textStack = Stack.Vertical(taskCode, taskDescription)
+        let textStack = Stack.Vertical(taskCode, taskDescription, UIView())
         let containerStack = Stack.Horizontal(spacing: .sm, {
             let content = View()
             content.addSubview(taskCheckBox)

@@ -17,6 +17,9 @@ open class List: UITableView {
         
         separatorStyle = .none
         
+        showsVerticalScrollIndicator = false
+        showsHorizontalScrollIndicator = false
+        
         if #available(iOS 15.0, *) {
             sectionHeaderTopPadding = 0
         }

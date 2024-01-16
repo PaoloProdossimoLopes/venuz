@@ -39,6 +39,10 @@
 		528AC2CB2B55364F003AE080 /* NoListHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2CA2B55364F003AE080 /* NoListHeaderController.swift */; };
 		528AC2CD2B55365B003AE080 /* SelectListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2CC2B55365B003AE080 /* SelectListCell.swift */; };
 		528AC2CF2B55366D003AE080 /* SelectListCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2CE2B55366D003AE080 /* SelectListCellController.swift */; };
+		528AC2D22B55377D003AE080 /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D12B55377D003AE080 /* Scroll.swift */; };
+		528AC2D42B561200003AE080 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D32B561200003AE080 /* Divider.swift */; };
+		528AC2D62B5612EC003AE080 /* SimpleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D52B5612EC003AE080 /* SimpleListCell.swift */; };
+		528AC2D82B561300003AE080 /* SimpleListCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D72B561300003AE080 /* SimpleListCellController.swift */; };
 		5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */; };
 		626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */; };
 		66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B6A07E4CA3A1AA1847992CCCCE67E /* Theme.swift */; };
@@ -125,6 +129,10 @@
 		528AC2CA2B55364F003AE080 /* NoListHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoListHeaderController.swift; sourceTree = "<group>"; };
 		528AC2CC2B55365B003AE080 /* SelectListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListCell.swift; sourceTree = "<group>"; };
 		528AC2CE2B55366D003AE080 /* SelectListCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListCellController.swift; sourceTree = "<group>"; };
+		528AC2D12B55377D003AE080 /* Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
+		528AC2D32B561200003AE080 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		528AC2D52B5612EC003AE080 /* SimpleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListCell.swift; sourceTree = "<group>"; };
+		528AC2D72B561300003AE080 /* SimpleListCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListCellController.swift; sourceTree = "<group>"; };
 		538F3043385D3337E3E8BF23CA108DC7 /* Venuz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Venuz.modulemap; sourceTree = "<group>"; };
 		541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AphroditeToken.swift; sourceTree = "<group>"; };
 		58246579F35AA2ED64E6BC9409236243 /* Pods-Venuz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Venuz_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -224,6 +232,8 @@
 				528AC2A12B493CFA003AE080 /* Progressbar.swift */,
 				528AC2A52B494619003AE080 /* Stepper.swift */,
 				528AC2A92B4C113F003AE080 /* Input.swift */,
+				528AC2D12B55377D003AE080 /* Scroll.swift */,
+				528AC2D32B561200003AE080 /* Divider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -242,6 +252,8 @@
 				528AC2CA2B55364F003AE080 /* NoListHeaderController.swift */,
 				528AC2CC2B55365B003AE080 /* SelectListCell.swift */,
 				528AC2CE2B55366D003AE080 /* SelectListCellController.swift */,
+				528AC2D52B5612EC003AE080 /* SimpleListCell.swift */,
+				528AC2D72B561300003AE080 /* SimpleListCellController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -534,6 +546,7 @@
 				528AC2B62B4EBD76003AE080 /* MultipleSelectionToggleButtonGroup.swift in Sources */,
 				528AC2B02B4DF5F4003AE080 /* Edge+Extensions.swift in Sources */,
 				528AC2BD2B5535C8003AE080 /* ListCellController.swift in Sources */,
+				528AC2D42B561200003AE080 /* Divider.swift in Sources */,
 				B131967B2B44F93500B5B8D2 /* Radius+Extensions.swift in Sources */,
 				B13196772B44E7DD00B5B8D2 /* Radius.swift in Sources */,
 				528AC2AC2B4C2B17003AE080 /* LineWidth.swift in Sources */,
@@ -546,6 +559,7 @@
 				528AC2AE2B4DF5E7003AE080 /* CGRect+Extensions.swift in Sources */,
 				38C51004575AC8D2EE67325F7D100C30 /* ViewController.swift in Sources */,
 				B13196932B4536D900B5B8D2 /* AlertDialogViewController.swift in Sources */,
+				528AC2D62B5612EC003AE080 /* SimpleListCell.swift in Sources */,
 				528AC2A22B493CFA003AE080 /* Progressbar.swift in Sources */,
 				A0A67BE0B9B7751FD68848D46DCE8596 /* FontSize.swift in Sources */,
 				528AC2BF2B5535D8003AE080 /* ListHeaderController.swift in Sources */,
@@ -558,6 +572,7 @@
 				B13196892B452AE600B5B8D2 /* Icon.swift in Sources */,
 				528AC2A02B49335D003AE080 /* Checkbox.swift in Sources */,
 				B13196912B45352400B5B8D2 /* Stack.swift in Sources */,
+				528AC2D22B55377D003AE080 /* Scroll.swift in Sources */,
 				B1396BB02B46D19E009AB586 /* Img.swift in Sources */,
 				528AC2CD2B55365B003AE080 /* SelectListCell.swift in Sources */,
 				528AC2C12B5535E5003AE080 /* ListHeader.swift in Sources */,
@@ -569,6 +584,7 @@
 				528AC2C52B553601003AE080 /* ReusableListCell.swift in Sources */,
 				B1396BAE2B46D188009AB586 /* Bundle+Extensions.swift in Sources */,
 				66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */,
+				528AC2D82B561300003AE080 /* SimpleListCellController.swift in Sources */,
 				528AC2BA2B4F2CCF003AE080 /* List.swift in Sources */,
 				B162544A2B44D6E1001EC92A /* FontSize+Extension.swift in Sources */,
 				CA3CE8F384A32B05F0C410BEF9280170 /* Token.swift in Sources */,

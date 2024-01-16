@@ -65,7 +65,7 @@ public final class Contraintable {
     
     @discardableResult
     public func anchorEqualTop(atSafeBottom view: UIView, padding: Spacing = .none) -> Self {
-        active(item.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding.value))
+        active(item.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: padding.value))
     }
     
     @discardableResult
@@ -109,8 +109,28 @@ public final class Contraintable {
     }
     
     @discardableResult
+    public func minHeight(_ view: UIView) -> Contraintable {
+        active(item.heightAnchor.constraint(greaterThanOrEqualTo: view.heightAnchor))
+    }
+    
+    @discardableResult
+    public func minWidth(_ view: UIView) -> Contraintable {
+        active(item.widthAnchor.constraint(greaterThanOrEqualTo: view.widthAnchor))
+    }
+    
+    @discardableResult
     public func maxWidth(_ size: CGFloat) -> Contraintable {
         active(item.widthAnchor.constraint(lessThanOrEqualToConstant: size))
+    }
+    
+    @discardableResult
+    public func maxHeight(_ view: UIView) -> Contraintable {
+        active(item.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor))
+    }
+    
+    @discardableResult
+    public func maxWidth(_ view: UIView) -> Contraintable {
+        active(item.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor))
     }
     
     @discardableResult
@@ -119,8 +139,18 @@ public final class Contraintable {
     }
     
     @discardableResult
+    public func height(_ view: UIView) -> Contraintable {
+        active(item.heightAnchor.constraint(equalTo: view.heightAnchor))
+    }
+    
+    @discardableResult
     public func width(_ size: CGFloat) -> Contraintable {
         active(item.widthAnchor.constraint(equalToConstant: size))
+    }
+    
+    @discardableResult
+    public func width(_ view: UIView) -> Contraintable {
+        active(item.widthAnchor.constraint(equalTo: view.widthAnchor))
     }
     
     @discardableResult
