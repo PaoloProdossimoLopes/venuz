@@ -1,6 +1,10 @@
 import UIKit
 
-open class SimpleListCell: ListCell {
+open class SimpleListCell: SetupableViewDataCell {
+    public func setup(viewData: ViewData) {
+        titleLabel.setText(viewData.title)
+    }
+    
     public struct ViewData {
         let title: String
         
@@ -29,9 +33,4 @@ open class SimpleListCell: ListCell {
             .fillToParrent()
             .minHeight(50)
     }
-    
-    func setupViewData(_ viewData: ViewData) {
-        titleLabel.setText(viewData.title)
-    }
 }
-

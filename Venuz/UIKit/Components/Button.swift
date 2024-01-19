@@ -71,6 +71,13 @@ open class Button: UIControl {
     }
     
     @discardableResult
+    public func setTarget(_ target: Any?, action selector: Selector, event: UIControl.Event = .touchUpInside) -> Self {
+        addTarget(target, action: selector, for: event)
+        
+        return self
+    }
+    
+    @discardableResult
     public func setEnableState() -> Self {
         label.setVariant(.standard)
         backgroundColor = background.uiColor
@@ -109,7 +116,7 @@ open class Button: UIControl {
 
 extension UIView {
     @discardableResult
-    func addTapAction(target: Any?, action: Selector?) -> Self {
+    public func addTapAction(target: Any?, action: Selector?) -> Self {
         let tapGesture = UITapGestureRecognizer(target: target, action: action)
         addGestureRecognizer(tapGesture)
         isUserInteractionEnabled = true

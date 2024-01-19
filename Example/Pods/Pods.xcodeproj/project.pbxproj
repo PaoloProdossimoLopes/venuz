@@ -43,6 +43,7 @@
 		528AC2D42B561200003AE080 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D32B561200003AE080 /* Divider.swift */; };
 		528AC2D62B5612EC003AE080 /* SimpleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D52B5612EC003AE080 /* SimpleListCell.swift */; };
 		528AC2D82B561300003AE080 /* SimpleListCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D72B561300003AE080 /* SimpleListCellController.swift */; };
+		528AC2DA2B5A8EA9003AE080 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2D92B5A8EA9003AE080 /* NSObject+Extensions.swift */; };
 		5C8E84B12A8C5FE8AB8A84F5C43523BB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51103DEDA4DE343189D9AD3BF3230A5C /* Spacing.swift */; };
 		626DDBF20324802EE48FB85567C34AED /* Venuz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B36782DC09B295692116E9AD434458 /* Venuz-dummy.m */; };
 		66E710D973951D70C7EBDA02308339C9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B6A07E4CA3A1AA1847992CCCCE67E /* Theme.swift */; };
@@ -133,6 +134,7 @@
 		528AC2D32B561200003AE080 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 		528AC2D52B5612EC003AE080 /* SimpleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListCell.swift; sourceTree = "<group>"; };
 		528AC2D72B561300003AE080 /* SimpleListCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListCellController.swift; sourceTree = "<group>"; };
+		528AC2D92B5A8EA9003AE080 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		538F3043385D3337E3E8BF23CA108DC7 /* Venuz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Venuz.modulemap; sourceTree = "<group>"; };
 		541FAC2867263A45A04CDE072C9C633C /* AphroditeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AphroditeToken.swift; sourceTree = "<group>"; };
 		58246579F35AA2ED64E6BC9409236243 /* Pods-Venuz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Venuz_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 				528AC2A32B4942F9003AE080 /* UIViewController+Extensions.swift */,
 				528AC2AD2B4DF5E7003AE080 /* CGRect+Extensions.swift */,
 				528AC2AF2B4DF5F4003AE080 /* Edge+Extensions.swift */,
+				528AC2D92B5A8EA9003AE080 /* NSObject+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				528AC29B2B48D323003AE080 /* View.swift in Sources */,
 				528AC2C92B553621003AE080 /* ListSection.swift in Sources */,
 				B131968B2B452C6500B5B8D2 /* Alert.swift in Sources */,
+				528AC2DA2B5A8EA9003AE080 /* NSObject+Extensions.swift in Sources */,
 				528AC2A42B4942F9003AE080 /* UIViewController+Extensions.swift in Sources */,
 				528AC29D2B48D4A5003AE080 /* RGBA.swift in Sources */,
 				528AC2B82B4EBE25003AE080 /* SelectionToggleButtonGroup.swift in Sources */,
