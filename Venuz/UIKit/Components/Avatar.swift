@@ -21,12 +21,14 @@ open class Avatar: Card {
         addSubview(loader)
         
         image.constraintable.fill(on: self)
-        placeholder.constraintable.fill(on: self, edge: .equal(.md))
+        placeholder.constraintable
+            .centerX(on: self)
+            .centerY(on: self)
         loader.constraintable.fill(on: self, edge: .equal(.md))
         
         setState(state)
         
-        constraintable.equalSize(36)
+        constraintable.equalSize(44)
     }
     
     @discardableResult

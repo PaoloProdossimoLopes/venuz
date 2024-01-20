@@ -65,6 +65,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		52350FBD2B5C1FA300AFF167 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				52350FB72B5C155000AFF167 /* MailViewModel.swift */,
+				52350FB92B5C156C00AFF167 /* MailViewController.swift */,
+				52350FBB2B5C158C00AFF167 /* MailCell.swift */,
+			);
+			name = Email;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		607FACD21AFB9204008FA782 /* Example for Venuz */ = {
 			isa = PBXGroup;
 			children = (
+				52350FBD2B5C1FA300AFF167 /* Email */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* HomeViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -95,9 +106,6 @@
 				528AC2DB2B5A8F85003AE080 /* HomeViewModel.swift */,
 				528AC2DD2B5A8F9D003AE080 /* DocumentationViewController.swift */,
 				528AC2DF2B5A8FB4003AE080 /* ExamplesViewController.swift */,
-				52350FB72B5C155000AFF167 /* MailViewModel.swift */,
-				52350FB92B5C156C00AFF167 /* MailViewController.swift */,
-				52350FBB2B5C158C00AFF167 /* MailCell.swift */,
 			);
 			name = "Example for Venuz";
 			path = Venuz;
@@ -378,9 +386,11 @@
 			baseConfigurationReference = F77C5050D1A526265D729E84 /* Pods-Venuz_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				DEVELOPMENT_TEAM = Y487CY958A;
 				INFOPLIST_FILE = Venuz/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Venuz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,9 +409,11 @@
 			baseConfigurationReference = 6E413C8ECD4BA697FC2029E7 /* Pods-Venuz_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				DEVELOPMENT_TEAM = Y487CY958A;
 				INFOPLIST_FILE = Venuz/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Venuz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,5 +1,7 @@
 import Venuz
 
+typealias MailCellController = GenericListCellController<MailCell>
+
 final class MailCell: SetupableViewDataCell {
     struct ViewData {
         let sender: String
@@ -9,6 +11,7 @@ final class MailCell: SetupableViewDataCell {
     }
     
     private lazy var cardContainer = Card()
+        .disableInteraction()
     
     private lazy var senderLabel = Label(.lg)
     
@@ -43,4 +46,3 @@ final class MailCell: SetupableViewDataCell {
     }
 }
 
-typealias MailCellController = GenericListCellController<MailCell>
