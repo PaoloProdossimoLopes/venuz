@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52350FB82B5C155000AFF167 /* MailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52350FB72B5C155000AFF167 /* MailViewModel.swift */; };
+		52350FBA2B5C156C00AFF167 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52350FB92B5C156C00AFF167 /* MailViewController.swift */; };
+		52350FBC2B5C158C00AFF167 /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52350FBB2B5C158C00AFF167 /* MailCell.swift */; };
 		528AC2DC2B5A8F85003AE080 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2DB2B5A8F85003AE080 /* HomeViewModel.swift */; };
 		528AC2DE2B5A8F9D003AE080 /* DocumentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2DD2B5A8F9D003AE080 /* DocumentationViewController.swift */; };
 		528AC2E02B5A8FB4003AE080 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC2DF2B5A8FB4003AE080 /* ExamplesViewController.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		0B774F4FA8286C9D2976A569 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		52350FB72B5C155000AFF167 /* MailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewModel.swift; sourceTree = "<group>"; };
+		52350FB92B5C156C00AFF167 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
+		52350FBB2B5C158C00AFF167 /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
 		528AC2DB2B5A8F85003AE080 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		528AC2DD2B5A8F9D003AE080 /* DocumentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationViewController.swift; sourceTree = "<group>"; };
 		528AC2DF2B5A8FB4003AE080 /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,9 @@
 				528AC2DB2B5A8F85003AE080 /* HomeViewModel.swift */,
 				528AC2DD2B5A8F9D003AE080 /* DocumentationViewController.swift */,
 				528AC2DF2B5A8FB4003AE080 /* ExamplesViewController.swift */,
+				52350FB72B5C155000AFF167 /* MailViewModel.swift */,
+				52350FB92B5C156C00AFF167 /* MailViewController.swift */,
+				52350FBB2B5C158C00AFF167 /* MailCell.swift */,
 			);
 			name = "Example for Venuz";
 			path = Venuz;
@@ -240,7 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
+				52350FBA2B5C156C00AFF167 /* MailViewController.swift in Sources */,
+				52350FB82B5C155000AFF167 /* MailViewModel.swift in Sources */,
 				528AC2E02B5A8FB4003AE080 /* ExamplesViewController.swift in Sources */,
+				52350FBC2B5C158C00AFF167 /* MailCell.swift in Sources */,
 				528AC2DC2B5A8F85003AE080 /* HomeViewModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				528AC2DE2B5A8F9D003AE080 /* DocumentationViewController.swift in Sources */,
