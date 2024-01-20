@@ -165,32 +165,31 @@ final class MailViewController: ViewController {
         .setDelegate(self)
     
     private lazy var mailList = List()
-        .disableScroll()
-    
-    private lazy var containerStackView = Stack.Vertical(spacing: .md)
-        .attach(searchBar)
-        .attach(mailList)
-    
-    private lazy var mailScroll = Scroll()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Email"
         
-        navigationController?.hidesBarsOnSwipe = true
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        view.addSubview(mailScroll)
-        mailScroll.constraintable
-            .fill(on: view, edge: .horizontal(.md))
+        view.addSubview(searchBar)
+        searchBar.constraintable
+            .anchorEqualTop(atSafeTop: view)
+            .anchorEqualLeading(atLeading: view, padding: .md)
+            .anchorEqualTrailing(atTrailing: view, padding: .md)
         
-        mailScroll.addSubview(containerStackView)
-        containerStackView.constraintable
-            .fill(on: mailScroll)
-            .height(mailScroll)
-            .width(mailScroll)
+        view.addSubview(mailList)
+        mailList.constraintable
+            .anchorEqualTop(atBottom: searchBar, padding: .md)
+            .anchorEqualLeading(atLeading: view, padding: .md)
+            .anchorEqualTrailing(atTrailing: view, padding: .md)
+            .anchorEqualBottom(atBottom: view, padding: .md)
         
+        reloadWithDefault()
+    }
+    
+    private func reloadWithDefault() {
         mailList.addListSection(ListSection(
             headerController: NoListHeaderController(),
             cellsControllers: viewModel.mailViewData.map {
@@ -206,42 +205,35 @@ final class MailViewController: ViewController {
 }
 
 extension MailViewController: InputDelegate {
-    func inputReturn(_ input: Input) {
-        UIView.animate(withDuration: 1) {
-            let text = input.getText()
-            if text.isEmpty {
-                self.mailList.replaceListSections([ListSection(
-                    headerController: NoListHeaderController(),
-                    cellsControllers: self.viewModel.mailViewData.map {
-                        MailCellController(viewData: MailCell.ViewData(
-                            sender: $0.sender,
-                            subject: $0.subject,
-                            content: $0.content,
-                            relativeTime: $0.relativeTime
-                        ))
-                    }
-                )])
-                return
-            }
-            
-            self.mailList.replaceListSections([ListSection(
-                headerController: NoListHeaderController(),
-                cellsControllers: self.viewModel.mailViewData
-                    .filter {
-                        $0.content.contains(text) ||
-                        $0.sender.contains(text) ||
-                        $0.subject.contains(text)
-                    }
-                    .map {
-                    MailCellController(viewData: MailCell.ViewData(
-                        sender: $0.sender,
-                        subject: $0.subject,
-                        content: $0.content,
-                        relativeTime: $0.relativeTime
-                    ))
-                }
-            )])
+    private func filterWithTextContaing(text: String) -> ((MailViewData) -> Bool) {
+        return { viewData in
+            viewData.content.lowercased().contains(text) ||
+            viewData.sender.lowercased().contains(text) ||
+            viewData.subject.lowercased().contains(text)
         }
+    }
+    
+    private func mapMailViewData(_ viewData: MailViewData) -> MailCellController {
+        MailCellController(viewData: MailCell.ViewData(
+            sender: viewData.sender,
+            subject: viewData.subject,
+            content: viewData.content,
+            relativeTime: viewData.relativeTime
+        ))
+    }
+    
+    func inputReturn(_ input: Input) {
+        let text = input.getText().lowercased()
+        if text.isEmpty {
+            return reloadWithDefault()
+        }
+        
+        mailList.replaceListSections([ListSection(
+            headerController: NoListHeaderController(),
+            cellsControllers: viewModel.mailViewData
+                .filter(filterWithTextContaing(text: text))
+                .map(mapMailViewData)
+        )])
     }
 }
 
