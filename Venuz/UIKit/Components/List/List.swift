@@ -106,7 +106,7 @@ extension List: UITableViewDelegate {
 }
 
 public extension List {
-    func reuse<C: ReusableListCell>(_ CellType: C.Type, at indexPath: IndexPath) -> C {
+    func reuse<C: ListCell>(_ CellType: C.Type, at indexPath: IndexPath) -> C {
         let identifier = CellType.identifier
         
         guard dequeueReusableCell(withIdentifier: identifier) != nil else {

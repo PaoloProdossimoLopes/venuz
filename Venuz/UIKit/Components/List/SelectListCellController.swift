@@ -7,7 +7,7 @@ public final class SelectListCellController: ListCellController {
         self.viewData = viewData
     }
     
-    public func list(_ list: List, createListCellAtIndexPath indexPath: IndexPath) -> ReusableListCell {
+    public func list(_ list: List, createListCellAtIndexPath indexPath: IndexPath) -> ListCell {
         selectListCell = SelectListCell()
         selectListCell.setupViewData(viewData)
         selectListCell.selectionStyle = .none

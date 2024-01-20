@@ -1,5 +1,16 @@
-open class Input: UITextField {
-    private let padding = Edge.horizontal(.sm)
+public protocol InputDelegate: AnyObject {
+    func inputReturn(_ input: Input)
+}
+
+open class Input: Card {
+    
+    weak var delegate: InputDelegate?
+    
+    private lazy var leftImage = Image()
+        .setTintColor(theme.token.color.foreground)
+        .setScaleAspecToFit()
+    
+    private lazy var input = TextField()
     
     private lazy var rightImage = Image(.xFilled)
         .setTintColor(theme.token.color.foreground)
@@ -7,29 +18,43 @@ open class Input: UITextField {
         .addTapAction(target: self, action: #selector(rightButtonActionHandler))
     
     public init(text: String = String(), placeholder: String = String()) {
-        super.init(frame: .zero)
+        super.init()
+        attach(leftImage)
+        attach(input)
+        attach(rightImage)
         
         setText(text)
         setUnfocusBoarder()
         setRadius(.md)
         setPlaceholder(placeholder)
-        tintColor = theme.token.color.foreground.uiColor
-        textColor = theme.token.color.foreground.uiColor
-        keyboardType = .default
-        returnKeyType = .done
-        delegate = self
+        
+        input.tintColor = theme.token.color.foreground.uiColor
+        input.textColor = theme.token.color.foreground.uiColor
+        input.keyboardType = .default
+        input.returnKeyType = .done
+        input.delegate = self
         
         configureRightImage()
-        addTarget(self, action: #selector(textFieldChange), for: .editingChanged)
+        input.addTarget(self, action: #selector(textFieldChange), for: .editingChanged)
         
         constraintable.minHeight(44)
     }
     
     private func configureRightImage() {
         hideRightButton()
-        rightView = rightImage
-        rightViewMode = .always
-        rightImage.constraintable.minWidth(44)
+        input.rightView = rightImage
+        input.rightViewMode = .always
+        rightImage.constraintable.width(44)
+    }
+    
+    private func configureLeadingImage(icon: Icon) {
+        leftImage.setIcon(icon)
+        leftImage.constraintable.width(44)
+        
+        input.leftView = leftImage
+        input.leftViewMode = .always
+        
+        layoutIfNeeded()
     }
     
     @available(*, unavailable)
@@ -37,8 +62,8 @@ open class Input: UITextField {
     
     @discardableResult
     public func setPlaceholder(_ newPlaceholder: String) -> Self {
-        placeholder = newPlaceholder
-        attributedPlaceholder = NSAttributedString(string: newPlaceholder, attributes: [
+        input.placeholder = newPlaceholder
+        input.attributedPlaceholder = NSAttributedString(string: newPlaceholder, attributes: [
             .foregroundColor: theme.token.color.muttedForeground.uiColor,
             .font: UIFont.preferredFont(forTextStyle: .body),
         ])
@@ -47,26 +72,32 @@ open class Input: UITextField {
     }
     
     @discardableResult
-    public func setText(_ newText: String) -> Self {
-        text = newText
+    public func setDelegate(_ delegate: InputDelegate) -> Self {
+        self.delegate = delegate
         
         return self
     }
     
-    override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(padding: padding)
+    @discardableResult
+    public func setText(_ newText: String) -> Self {
+        input.text = newText
+        
+        return self
     }
     
-    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(padding: padding)
+    @discardableResult
+    public func setLeftIcon(_ icon: Icon) -> Self {
+        configureLeadingImage(icon: icon)
+        
+        return self
     }
     
-    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(padding: padding)
+    public func getText() -> String {
+        input.text ?? String()
     }
     
     @objc private func rightButtonActionHandler() {
-        text = String()
+        input.text = String()
         hideRightButton()
     }
     
@@ -92,8 +123,8 @@ open class Input: UITextField {
     }
     
     private func showRightButton() {
-        guard let text, !text.isEmpty, rightImage.isHidden else { return }
-        
+        guard let text = input.text, !text.isEmpty, rightImage.isHidden else { return }
+
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn) {
             self.rightImage.setVisible()
         }
@@ -121,6 +152,9 @@ extension Input: UITextFieldDelegate {
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        delegate?.inputReturn(self)
         return true
     }
 }
+
+open class TextField: UITextField { }

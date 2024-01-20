@@ -33,4 +33,7 @@ open class SimpleListCell: SetupableViewDataCell {
             .fillToParrent()
             .minHeight(50)
     }
+    
+    @available(*, unavailable)
+    required public init?(coder: NSCoder) { nil }
 }

@@ -28,7 +28,7 @@ open class GenericListCellController<Cell: SetupableViewDataCell>: ListCellContr
         self.didTap = didTap
     }
     
-    public func list(_ list: List, createListCellAtIndexPath indexPath: IndexPath) -> ReusableListCell {
+    public func list(_ list: List, createListCellAtIndexPath indexPath: IndexPath) -> ListCell {
         let simpleListCell = list.reuse(Cell.self, at: indexPath)
         simpleListCell.setup(viewData: viewData)
         simpleListCell.selectionStyle = .none

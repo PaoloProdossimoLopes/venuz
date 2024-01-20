@@ -19,13 +19,11 @@ final class HomeViewController: ViewController {
         .setRadius(.md)
         .setTarget(self, action: #selector(navigateToDocumentation))
     
-    private lazy var containerStack = Stack.Vertical(
-        spacing: .lg,
-        Stack.Vertical(spacing: .md, titleLabel, descriptionLabel),
-        View(),
-        examplesButton,
-        documentationsButton
-    )
+    private lazy var containerStack = Stack.Vertical(spacing: .lg)
+        .attach(Stack.Vertical(spacing: .md, titleLabel, descriptionLabel))
+        .attach(View())
+        .attach(examplesButton)
+        .attach(documentationsButton)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,16 +47,17 @@ final class HomeViewController: ViewController {
             .fillToSafeParrent(edge: .horizontal(.md))
     }
     
-    @objc private func navigateToDocumentation() {
-        let documentationViewController = DocumentationViewController()
-        documentationViewController.title = viewModel.outlineButtonTitle.capitalized
-        navigationController?.pushViewController(documentationViewController, animated: true)
-    }
     
     @objc private func navigateToExample() {
         let exampleViewController = ExamplesViewController()
-        exampleViewController.title = viewModel.filledButtonTitle.capitalized
+        exampleViewController.title = viewModel.filledButtonTitle
         navigationController?.pushViewController(exampleViewController, animated: true)
+    }
+    
+    @objc private func navigateToDocumentation() {
+        let documentationViewController = DocumentationViewController()
+        documentationViewController.title = viewModel.outlineButtonTitle
+        navigationController?.pushViewController(documentationViewController, animated: true)
     }
     
     private enum Metric {

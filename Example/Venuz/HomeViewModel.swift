@@ -3,5 +3,5 @@ struct HomeViewModel {
     let description = "Design acessivel, customizavel e simples"
     
     let filledButtonTitle = "Exemplos"
-    let outlineButtonTitle = "Exemplos"
+    let outlineButtonTitle = "Documentação"
 }

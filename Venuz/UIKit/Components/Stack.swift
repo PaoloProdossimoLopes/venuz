@@ -42,4 +42,10 @@ open class Stack: UIStackView {
         self.spacing = spacing.value
         return self
     }
+    
+    @discardableResult
+    public func setAxis(_ axis: NSLayoutConstraint.Axis) -> Self {
+        self.axis = axis
+        return self
+    }
 }

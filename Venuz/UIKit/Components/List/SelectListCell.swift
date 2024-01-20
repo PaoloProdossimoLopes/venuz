@@ -1,6 +1,6 @@
 import UIKit
 
-public final class SelectListCell: ReusableListCell {
+public final class SelectListCell: ListCell {
     public struct ViewData {
         let taskCode: String
         let taskDescription: String

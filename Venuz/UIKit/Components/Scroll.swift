@@ -8,8 +8,6 @@ open class Scroll: UIScrollView {
         
         isScrollEnabled = true
         
-        contentInsetAdjustmentBehavior = .never
-        
         setBackgroundColor(theme.token.color.transparent)
     }
     

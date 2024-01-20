@@ -8,4 +8,5 @@
     case x = "xmark"
     case xFilled = "xmark.circle.fill"
     case checkmark
+    case magnifyingglass
 }

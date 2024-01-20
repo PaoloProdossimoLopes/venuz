@@ -1,5 +1,5 @@
 public protocol ListCellController {
-    func list(_ list: List, createListCellAtIndexPath indexPath: IndexPath) -> ReusableListCell
+    func list(_ list: List, createListCellAtIndexPath indexPath: IndexPath) -> ListCell
     func list(_ list: List, didSelectRowAt indexPath: IndexPath)
 }
 
