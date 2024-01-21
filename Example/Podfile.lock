@@ -1,20 +1,24 @@
 PODS:
+  - SwiftLint (0.54.0)
   - Venuz (0.1.0):
-    - Venuz/Tokens (= 0.1.0)
-    - Venuz/UIKit (= 0.1.0)
-  - Venuz/Tokens (0.1.0)
-  - Venuz/UIKit (0.1.0)
+    - SwiftLint
 
 DEPENDENCIES:
+  - SwiftLint
   - Venuz (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   Venuz:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Venuz: 7382eb711c3ce7414b02faed48269c9aceaf9b2c
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  Venuz: 20dc7f31b499ec2110e73e3bfae2d6777d926f46
 
-PODFILE CHECKSUM: e711d1f0fe7cecb462905c5d7ef5836a7e05b7f3
+PODFILE CHECKSUM: 4a4b24ae51313327064100aec32c9d41a11c6b1b
 
 COCOAPODS: 1.14.3

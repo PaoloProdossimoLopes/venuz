@@ -38,6 +38,7 @@ open class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
         return self
     }
+    
     @discardableResult
     public func addKeyboardBehaviour() -> Self {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)

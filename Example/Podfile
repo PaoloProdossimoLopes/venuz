@@ -5,5 +5,5 @@ platform :ios, '13.0'
 target 'Venuz_Example' do
   pod 'Venuz', :path => '../'
   
-  pod 'Venuz/Tokens
+  pod 'SwiftLint'
 end

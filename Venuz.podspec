@@ -14,13 +14,19 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'Venuz/**/*'
+  s.source_files = 'Venuz/**/*.{swift, json, xcassets}'
+  s.resources = [
+    'Venuz/**/*.{json, xcassets}',
+    'Venuz/UIKit/Media.xcassets'
+  ]
 
-  s.subspec 'Tokens' do |ss|
-    ss.source_files = 'Venuz/Tokens/**/*.{swift}'
-  end
+#  s.subspec 'Tokens' do |ss|
+#    ss.source_files = 'Venuz/Tokens/**/*'
+#  end
+#  
+#  s.subspec 'UIKit' do |ss|
+#    ss.source_files = 'Venuz/UIKit/**/*'
+#  end
   
-  s.subspec 'UIKit' do |ss|
-    ss.source_files = 'Venuz/UIKit/**/*.{swift}'
-  end
+  s.dependency 'SwiftLint'
 end

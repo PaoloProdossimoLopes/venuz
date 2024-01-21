@@ -17,31 +17,28 @@
 		607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* HomeViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		FE4DEDB9F5C63E459042D4C5 /* Pods_Venuz_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F1B693273E2F2C7E3512FA /* Pods_Venuz_Example.framework */; };
+		A6E468CAD9A1B16E07A87E45 /* Pods_Venuz_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BF3C992AE3862D04CC4D8 /* Pods_Venuz_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05183E0AD3ADCC55AFF710E4 /* Pods-Venuz_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venuz_Example.debug.xcconfig"; path = "Target Support Files/Pods-Venuz_Example/Pods-Venuz_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0B774F4FA8286C9D2976A569 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		345BF3C992AE3862D04CC4D8 /* Pods_Venuz_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venuz_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52350FB72B5C155000AFF167 /* MailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewModel.swift; sourceTree = "<group>"; };
 		52350FB92B5C156C00AFF167 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		52350FBB2B5C158C00AFF167 /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
 		528AC2DB2B5A8F85003AE080 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		528AC2DD2B5A8F9D003AE080 /* DocumentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationViewController.swift; sourceTree = "<group>"; };
 		528AC2DF2B5A8FB4003AE080 /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
-		5C522D1F65116F579D396CA8 /* Pods_Venuz_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venuz_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* Venuz_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venuz_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6506DAEF522FECEACF4BBBB9 /* Pods-Venuz_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venuz_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Venuz_Tests/Pods-Venuz_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6E413C8ECD4BA697FC2029E7 /* Pods-Venuz_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venuz_Example.release.xcconfig"; path = "Target Support Files/Pods-Venuz_Example/Pods-Venuz_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B28D93D832ABD0D46BDB2AEB /* Venuz.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Venuz.podspec; path = ../Venuz.podspec; sourceTree = "<group>"; };
-		CD44EFB83779E394E2BD5FC8 /* Pods-Venuz_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venuz_Tests.release.xcconfig"; path = "Target Support Files/Pods-Venuz_Tests/Pods-Venuz_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D6F1B693273E2F2C7E3512FA /* Pods_Venuz_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venuz_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28D93D832ABD0D46BDB2AEB /* Venuz.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Venuz.podspec; path = ../Venuz.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF45F233F2EAD0F2A969FC75 /* Pods-Venuz_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venuz_Example.release.xcconfig"; path = "Target Support Files/Pods-Venuz_Example/Pods-Venuz_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F1D60E8607EE7DCC5F177688 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F77C5050D1A526265D729E84 /* Pods-Venuz_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venuz_Example.debug.xcconfig"; path = "Target Support Files/Pods-Venuz_Example/Pods-Venuz_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,18 +46,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE4DEDB9F5C63E459042D4C5 /* Pods_Venuz_Example.framework in Frameworks */,
+				A6E468CAD9A1B16E07A87E45 /* Pods_Venuz_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2925A037C94D88C00D1AD40B /* Frameworks */ = {
+		4A792A9E7FB9450EC158A9EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6F1B693273E2F2C7E3512FA /* Pods_Venuz_Example.framework */,
-				5C522D1F65116F579D396CA8 /* Pods_Venuz_Tests.framework */,
+				345BF3C992AE3862D04CC4D8 /* Pods_Venuz_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,7 +78,7 @@
 				607FACD21AFB9204008FA782 /* Example for Venuz */,
 				607FACD11AFB9204008FA782 /* Products */,
 				ACD4B94E8D630E75C51A8CB2 /* Pods */,
-				2925A037C94D88C00D1AD40B /* Frameworks */,
+				4A792A9E7FB9450EC158A9EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,10 +128,8 @@
 		ACD4B94E8D630E75C51A8CB2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F77C5050D1A526265D729E84 /* Pods-Venuz_Example.debug.xcconfig */,
-				6E413C8ECD4BA697FC2029E7 /* Pods-Venuz_Example.release.xcconfig */,
-				6506DAEF522FECEACF4BBBB9 /* Pods-Venuz_Tests.debug.xcconfig */,
-				CD44EFB83779E394E2BD5FC8 /* Pods-Venuz_Tests.release.xcconfig */,
+				05183E0AD3ADCC55AFF710E4 /* Pods-Venuz_Example.debug.xcconfig */,
+				BF45F233F2EAD0F2A969FC75 /* Pods-Venuz_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,11 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Venuz_Example" */;
 			buildPhases = (
-				D51552CC40A9B1D4857F1185 /* [CP] Check Pods Manifest.lock */,
+				3C0F3CDD526703EF659A346F /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				D04EF74757F99C5DDB7BD3E9 /* [CP] Embed Pods Frameworks */,
+				1EF5E8F8458322D60DE3B665 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +204,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D04EF74757F99C5DDB7BD3E9 /* [CP] Embed Pods Frameworks */ = {
+		1EF5E8F8458322D60DE3B665 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,7 +221,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Venuz_Example/Pods-Venuz_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D51552CC40A9B1D4857F1185 /* [CP] Check Pods Manifest.lock */ = {
+		3C0F3CDD526703EF659A346F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,7 +377,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F77C5050D1A526265D729E84 /* Pods-Venuz_Example.debug.xcconfig */;
+			baseConfigurationReference = 05183E0AD3ADCC55AFF710E4 /* Pods-Venuz_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -406,7 +400,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E413C8ECD4BA697FC2029E7 /* Pods-Venuz_Example.release.xcconfig */;
+			baseConfigurationReference = BF45F233F2EAD0F2A969FC75 /* Pods-Venuz_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
